@@ -17,14 +17,23 @@ $the_loop = new WP_query(array(
         <div class="col-lg-4 col-md-7 col-sm-9">
           <div class="single-card card-style-one">
             <div class="card-image">
-              <img src="wp-content/themes/municipalidad_tchile/assets/img/card-1.jpg" alt="Image" />
+              <?php if (has_post_thumbnail( $post->ID ) ): ?>
+                  <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+                      <img src="<?php echo $image[0]; ?>" class="card-img-top rounded-0" style="height: 240px;object-fit: cover;">
+              <?php endif; ?>
             </div>
             <div class="card-content">
               <h4 class="card-title">
                 <a href="javascript:void(0)"><?php the_title(); ?></a>
               </h4>
               <p class="text">
-              <?php the_excerpt(); ?>
+              <?php //Filtro para 20 palabras -Valeria
+                add_filter( 'excerpt_length', function($length) {
+                    return 20;
+                }, PHP_INT_MAX );
+                
+                the_excerpt();
+              ?>
               </p>
             </div>
           </div>
