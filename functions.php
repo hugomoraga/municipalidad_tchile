@@ -283,3 +283,55 @@ function get_sugestion_title($item, $max_lenght=30){
         $title = substr( $title, 0, $max_lenght-3). '...';
     return $title;
 }
+
+
+add_action( 'init', 'informacion' );
+function informacion() {
+	$args = [
+		'label'  => esc_html__( 'Informaciones', 'text-domain' ),
+		'labels' => [
+			'menu_name'          => esc_html__( 'Informaciones', 'municipalidad' ),
+			'name_admin_bar'     => esc_html__( 'informacion', 'municipalidad' ),
+			'add_new'            => esc_html__( 'Agregar informacion', 'municipalidad' ),
+			'add_new_item'       => esc_html__( 'Agregar nueva informacion', 'municipalidad' ),
+			'new_item'           => esc_html__( 'Nueva informacion', 'municipalidad' ),
+			'edit_item'          => esc_html__( 'Editar informacion', 'municipalidad' ),
+			'view_item'          => esc_html__( 'View informacion', 'municipalidad' ),
+			'update_item'        => esc_html__( 'View informacion', 'municipalidad' ),
+			'all_items'          => esc_html__( 'Todas las Informaciones', 'municipalidad' ),
+			'search_items'       => esc_html__( 'Search Informaciones', 'municipalidad' ),
+			'parent_item_colon'  => esc_html__( 'Parent informacion', 'municipalidad' ),
+			'not_found'          => esc_html__( 'No Informaciones found', 'municipalidad' ),
+			'not_found_in_trash' => esc_html__( 'No Informaciones found in Trash', 'municipalidad' ),
+			'name'               => esc_html__( 'Informaciones', 'municipalidad' ),
+			'singular_name'      => esc_html__( 'informacion', 'municipalidad' ),
+		],
+		'public'              => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'show_ui'             => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'show_in_rest'        => true,
+		'capability_type'     => 'post',
+		'hierarchical'        => false,
+		'has_archive'         => true,
+		'query_var'           => true,
+		'can_export'          => true,
+		'rewrite_no_front'    => false,
+		'show_in_menu'        => true,
+		'menu_icon'           => 'dashicons-admin-post',
+		'supports' => [
+			'title',
+			'editor',
+			'author',
+			'thumbnail',
+		],
+		'taxonomies' => [
+			'category',
+		],
+		'rewrite' => true
+	];
+
+	register_post_type( 'informacion', $args );
+}
