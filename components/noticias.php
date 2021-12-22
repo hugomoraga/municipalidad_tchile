@@ -17,14 +17,16 @@ $the_loop = new WP_query(array(
         <div class="col-lg-4 col-md-7 col-sm-9">
           <div class="single-card card-style-one">
             <div class="card-image">
-              <?php if (has_post_thumbnail( $post->ID ) ): ?>
-                  <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-                      <img src="<?php echo $image[0]; ?>" class="card-img-top rounded-0" style="height: 240px;object-fit: cover;">
-              <?php endif; ?>
+              <a href="<?php the_permalink(); ?>">
+                <?php if (has_post_thumbnail( $post->ID ) ): ?>
+                    <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+                        <img src="<?php echo $image[0]; ?>" class="card-img-top rounded-0" style="height: 240px;object-fit: cover;">
+                <?php endif; ?>
+              </a>
             </div>
             <div class="card-content">
               <h4 class="card-title">
-                <a href="javascript:void(0)"><?php the_title(); ?></a>
+                <a href="<?php the_permalink(); ?>)"><?php the_title(); ?></a>
               </h4>
               <p class="text">
               <?php //Filtro para 20 palabras -Valeria

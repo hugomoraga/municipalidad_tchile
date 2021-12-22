@@ -43,7 +43,7 @@
 <style>
   .custom-logo-link > img {
     width: 230px;
-    height: 100%;
+    height: auto;
 }
 </style>
 	<nav class="navbar navbar-expand-md navbar-dark fw-bold fs-5" style="background-color:#36929e">
