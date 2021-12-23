@@ -2,7 +2,6 @@
 $the_loop = new WP_query(array(
 'posts_per_page' => 3,  
 'post_type' => 'informacion',
-'category_name' => 'decretos'
 ));
 ?>
 <style>
@@ -14,7 +13,7 @@ $the_loop = new WP_query(array(
     }
 </style>
 
-<section class="pb-5 bg-secondary">
+<section class="informaciones pb-5 bg-secondary">
     <div class="container">
         <div class="display-4 text-primary border-bottom border-2 border-light py-3"> Informaciones</div>
             
