@@ -13,7 +13,10 @@ get_header('principal');
 <style>
 	img {
 		margin-bottom: 3px;
-		margin-top: 33px;
+		margin-top: 30px;
+		width: 60%;
+		height: auto;
+		min-width:195px;
 	}
 </style>
 
@@ -44,3 +47,5 @@ get_header('principal');
 <?php
 
 get_footer('principal');
+
+?>
