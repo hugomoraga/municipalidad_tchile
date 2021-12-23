@@ -48,4 +48,4 @@ get_header('principal');
 
 <?php
 get_sidebar();
-get_footer();
+get_footer('principal');

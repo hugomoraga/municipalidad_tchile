@@ -24,4 +24,4 @@ get_header('principal');
 
 <?php
 
-get_footer();
+get_footer('principal');

@@ -5,7 +5,14 @@ $the_loop = new WP_query(array(
 'category_name' => 'decretos'
 ));
 ?>
-
+<style>
+    .no-info {
+        padding-top: 10px;
+        font-size: 21px;
+        text-align:right;
+        color:white;
+    }
+</style>
 
 <section class="pb-5 bg-secondary">
     <div class="container">
@@ -47,7 +54,9 @@ $the_loop = new WP_query(array(
       <?php wp_reset_postdata(); ?>
 
       <?php else: ?>
-        <?php echo "sin informaciones"; ?>
+        <div class="no-info">
+            <?php echo "Sin información . . ."; ?>
+        </div>
 
       <?php endif; ?>
       </div>

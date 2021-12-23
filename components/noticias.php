@@ -1,9 +1,19 @@
 <?php
 $the_loop = new WP_query(array(
 'posts_per_page' => 3,  
-'post_type' => 'post'
+'post_type' => 'post',
+'category_name' => 'noticias'
 ));
 ?>
+
+<style>
+    .no-notic {
+      padding-top: 10px;
+      font-size: 21px;
+      text-align:right;
+      color: black;
+    }
+</style>
 
 <section class="card-area pb-5">
     <div class="container">
@@ -44,7 +54,10 @@ $the_loop = new WP_query(array(
       <?php wp_reset_postdata(); ?>
 
       <?php else: ?>
-        <?php echo "sin noticias"; ?>
+        <div class="no-notic">
+            <?php echo "Sin noticias . . ."; ?>
+        </div>
+        <?php //echo "sin noticias"; ?>
 
       <?php endif; ?>
       </div>

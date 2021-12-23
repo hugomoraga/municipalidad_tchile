@@ -22,20 +22,46 @@
 		padding: 40px 14% 50px 14%;
 		text-align: justify;
 	}
+	.navbar {
+		box-shadow:none;
+	}
+	.navbar li {
+		margin-left:6px;
+		letter-spacing: 1px;
+	}
+	.navbar li, .navbar a {
+		color:#7C7C7D;
+	}
+	.navbar a:hover {
+		color:#1F1F1F;
+	}
 </style>
 
 <?php
 	if ( is_singular() ) : ?>
-		<div>
-			<a href="#">Inicio</a> <span>/</span>
-			<a href="#">
-				<?php
-					foreach((get_the_category()) as $category) {
-					echo $category->cat_name . ' ';
-				} ?>
-			</a> <span>/</span>
-			<a href="#"><?php echo get_the_title(); ?></a>	
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-brand" href="#Primary">Inicio</a>
+				</li>
+				<li class="nav-item">/</li>
+				<li class="nav-item">
+					<a class="nav-brand" href="#">
+					<?php
+						foreach((get_the_category()) as $category) {
+						echo $category->cat_name . ' ';
+					} ?>
+					</a>
+				</li>
+				<li class="nav-item">/</li>
+				<li class="nav-item">
+					<a class="nav-brand" href="#"><?php echo get_the_title(); ?></a>
+				</li>
+			</ul>
 		</div>
+	</nav>
+
 <?php endif;?>
 
 <div class="container">
