@@ -2,7 +2,6 @@
 $the_loop = new WP_query(array(
 'posts_per_page' => 3,  
 'post_type' => 'post',
-'category_name' => 'noticias'
 ));
 ?>
 
@@ -15,7 +14,7 @@ $the_loop = new WP_query(array(
     }
 </style>
 
-<section class="card-area pb-5">
+<section class="noticias pb-5">
     <div class="container">
       <div class="display-4 text-primary border-bottom border-2 border-secondary py-3"> Noticias</div>
 
