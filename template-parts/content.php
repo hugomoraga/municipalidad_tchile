@@ -23,11 +23,20 @@
 		text-align: justify;
 	}
 </style>
-<div>
-	<a href="#">Inicio</a> <span>/</span>
-	<a href="#"><?php echo get_the_category(4); ?></a> <span>/</span>
-	<a href="#"><?php echo get_the_title(); ?></a>
-</div>
+
+<?php
+	if ( is_singular() ) : ?>
+		<div>
+			<a href="#">Inicio</a> <span>/</span>
+			<a href="#">
+				<?php
+					foreach((get_the_category()) as $category) {
+					echo $category->cat_name . ' ';
+				} ?>
+			</a> <span>/</span>
+			<a href="#"><?php echo get_the_title(); ?></a>	
+		</div>
+<?php endif;?>
 
 <div class="container">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -73,6 +82,3 @@
 
 </div>
 
-<?php
-	get_footer();
-?>

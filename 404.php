@@ -7,7 +7,7 @@
  * @package municipalidad_tchile
  */
 
-get_header();
+get_header('principal');
 ?>
 
 	<main id="primary" class="site-main">

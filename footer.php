@@ -38,6 +38,25 @@
 		}
 	</style>
 	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm">
+					<a href="http://lacalera.tchile.com">
+					<img width="246" src="http://lacalera.tchile.com/wp-content/uploads/2021/12/cropped-ACTUALIZACION-IDENTIDAD-VISUAL_Mesa-de-trabajo-1.png" class="attachment-full size-full" alt="" loading="lazy" srcset="http://lacalera.tchile.com/wp-content/uploads/2021/12/cropped-ACTUALIZACION-IDENTIDAD-VISUAL_Mesa-de-trabajo-1.png 2697w, http://lacalera.tchile.com/wp-content/uploads/2021/12/cropped-ACTUALIZACION-IDENTIDAD-VISUAL_Mesa-de-trabajo-1-300x115.png 300w, http://lacalera.tchile.com/wp-content/uploads/2021/12/cropped-ACTUALIZACION-IDENTIDAD-VISUAL_Mesa-de-trabajo-1-1024x392.png 1024w, http://lacalera.tchile.com/wp-content/uploads/2021/12/cropped-ACTUALIZACION-IDENTIDAD-VISUAL_Mesa-de-trabajo-1-768x294.png 768w, http://lacalera.tchile.com/wp-content/uploads/2021/12/cropped-ACTUALIZACION-IDENTIDAD-VISUAL_Mesa-de-trabajo-1-1536x588.png 1536w, http://lacalera.tchile.com/wp-content/uploads/2021/12/cropped-ACTUALIZACION-IDENTIDAD-VISUAL_Mesa-de-trabajo-1-2048x784.png 2048w" sizes="(max-width: 2697px) 100vw, 2697px"></a>
+					<div class="elementor-widget-container">
+						<p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+					</div>
+				</div>
+				<div class="col-sm">
+				One of three columns
+				</div>
+				<div class="col-sm">
+				One of three columns
+				</div>
+			</div>
+		</div>
+	</footer>
 	<footer class="elementor-section elementor-top-section elementor-element elementor-element-2fb7f8a7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2fb7f8a7" data-element_type="section">
 		<div class="elementor-container elementor-column-gap-default">
 			<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-224fba27" data-id="224fba27" data-element_type="column">
