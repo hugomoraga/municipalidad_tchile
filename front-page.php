@@ -32,7 +32,7 @@ get_header('principal');
     <?php get_template_part( 'components/noticias');?>
 
     <!--  SECCION INFORMACIONES -->
-    <?php get_template_part( 'components/informaciones');?>
+    <?php get_template_part( 'components/decretos');?>
 
     <!--  SECCION ELEMENTOR -->
     <?php the_content();?>
