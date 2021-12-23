@@ -38,4 +38,4 @@ get_header('principal');
 
 </main>
 <?php
-get_footer();
+get_footer('principal');
