@@ -38,7 +38,7 @@
 		}
 	</style>
 	
-	<footer>
+	<!--<footer>
 		<div class="container">
 			<div class="row">
 				<div class="col-sm">
@@ -56,7 +56,7 @@
 				</div>
 			</div>
 		</div>
-	</footer>
+	</footer>-->
 	<footer class="elementor-section elementor-top-section elementor-element elementor-element-2fb7f8a7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2fb7f8a7" data-element_type="section">
 		<div class="elementor-container elementor-column-gap-default">
 			<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-224fba27" data-id="224fba27" data-element_type="column">
