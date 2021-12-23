@@ -13,7 +13,7 @@ get_header('principal');
 <style>
 	img {
 		margin-bottom: 3px;
-		margin-top: 36px;
+		margin-top: 33px;
 	}
 </style>
 
