@@ -10,6 +10,12 @@
 get_header('principal');
 ?>
 
+<style>
+	img {
+		margin-top: 40px;
+	}
+</style>
+
 	<main id="primary" class="site-main">
 
 		<?php
