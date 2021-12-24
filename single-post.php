@@ -15,7 +15,6 @@ get_header('principal');
 		margin-bottom: 3px;
 		margin-top: 30px;
 		height: auto;
-		width: 100%;
 		min-width:195px;
 	}
 	.post-thumbnail {
