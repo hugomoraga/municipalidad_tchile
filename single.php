@@ -12,7 +12,7 @@ get_header('principal');
 
 <style>
 	img {
-		margin-bottom: 3px;
+		margin-bottom: 5px;
 		margin-top: 30px;
 		height: auto;
 		min-width:195px;

@@ -10,12 +10,27 @@
 get_header('principal');
 ?>
 
+<style>
+	.error-404 {
+		padding: 50px 10% 30px 10%;
+		text-align:center;
+	}
+	h5 {
+		margin: 0 0 5px 0;
+		font-size: 100px;
+	}
+	.page-content {
+		margin: 25px 0px 5px 0px;
+		font-size: 25px;
+	}
+</style>
 	<main id="primary" class="site-main">
 
 		<section class="error-404 not-found">
 			<header class="page-header">
-				<h2 class="page-title"><?php esc_html_e( 'La pagina que buscabas no existe o esta mal escrita la URL,', 'municipalidad_tchile' ); ?></h2>
-				<h2 class="page-title"><?php esc_html_e( 'Revisa la url o puedes volver a inicio.', 'municipalidad_tchile' ); ?></h2>
+				<h5>404</h5>
+				<h2 class="page-title"><?php esc_html_e( 'Artículo no encontrado', 'municipalidad_tchile' ); ?></h2>
+				<h2 class="page-title"><?php esc_html_e( '', 'municipalidad_tchile' ); ?></h2>
 			</header><!-- .page-header -->
 
 			<div class="page-content">
