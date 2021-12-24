@@ -14,6 +14,7 @@ get_header('principal');
 	img {
 		margin-bottom: 3px;
 		margin-top: 30px;
+		width: 100%;
 		height: auto;
 		min-width:195px;
 	}
