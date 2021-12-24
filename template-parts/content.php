@@ -13,13 +13,13 @@
 		text-align: center;
 	}
 	.post-thumbnail img {
-		margin-top: 30px;
+		margin-top: 20px;
 	}
 	.entry-header {
 		margin-top: 30px;
 	}
 	.entry-content {
-		padding: 40px 14% 50px 14%;
+		padding: 20px 14% 50px 14%;
 		text-align: justify;
 	}
 	.navbar {
@@ -43,7 +43,7 @@
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<a class="nav-brand" href="#Primary">Inicio</a>
+					<a class="nav-brand" href="<?php echo home_url(); ?>">Inicio</a>
 				</li>
 				<li class="nav-item">/</li>
 				<li class="nav-item">

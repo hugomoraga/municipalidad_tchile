@@ -16,9 +16,6 @@ get_header('principal');
 ?>
 
 <style>
-	.site-main {
-		padding: 28px 7% 15px 7%;
-	}
 	.site-main header {
 		text-align:center;
 		padding: 0px 0px 13px 0px;

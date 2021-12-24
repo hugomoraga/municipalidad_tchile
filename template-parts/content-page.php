@@ -9,6 +9,54 @@
 
 ?>
 
+<style>
+	.container {
+		text-align: center;
+	}
+	.post-thumbnail img {
+		margin-top: 30px;
+	}
+	.entry-header {
+		margin-top: 30px;
+	}
+	.entry-content {
+		padding: 40px 14% 50px 14%;
+		text-align: justify;
+	}
+	.navbar {
+		box-shadow:none;
+	}
+	.navbar li {
+		margin-left:6px;
+		letter-spacing: 1px;
+	}
+	.navbar li, .navbar a {
+		color:#7C7C7D;
+	}
+	.navbar a:hover {
+		color:#1F1F1F;
+	}
+</style>
+
+<?php
+	if ( is_singular() ) : ?>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-brand" href="<?php echo home_url(); ?>">Inicio</a>
+				</li>
+				<li class="nav-item">/</li>
+				<li class="nav-item">
+					<a class="nav-brand" href="#"><?php echo get_the_title(); ?></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+<?php endif;?>
+
+<div class="container">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
@@ -29,26 +77,6 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<?php if ( get_edit_post_link() ) : ?>
-		<footer class="entry-footer">
-			<?php
-			edit_post_link(
-				sprintf(
-					wp_kses(
-						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'municipalidad_tchile' ),
-						array(
-							'span' => array(
-								'class' => array(),
-							),
-						)
-					),
-					wp_kses_post( get_the_title() )
-				),
-				'<span class="edit-link">',
-				'</span>'
-			);
-			?>
-		</footer><!-- .entry-footer -->
-	<?php endif; ?>
+
 </article><!-- #post-<?php the_ID(); ?> -->
+</div>
