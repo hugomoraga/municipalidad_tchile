@@ -14,9 +14,11 @@ get_header('principal');
 	img {
 		margin-bottom: 3px;
 		margin-top: 30px;
-		width: 60%;
 		height: auto;
 		min-width:195px;
+	}
+	.post-thumbnail {
+		padding: 0px 14% 0px 14%;
 	}
 </style>
 
