@@ -34,8 +34,10 @@ get_header('principal');
 			</header><!-- .page-header -->
 
 			<div class="page-content">
-				<p><?php esc_html_e( 'La pagina que buscabas no existe o esta mal escrita la URL, Revisa la url o puedes volver a inicio.', 'municipalidad_tchile' ); ?></p>
-
+				<p><?php esc_html_e( 'La pagina que buscabas no existe o esta mal escrita la URL, Revisa la url o puedes ', 'municipalidad_tchile' ); ?>
+					<a href="<?php echo home_url(); ?>">Volver al inicio.</a>
+				</p>
+				
 			</div><!-- .page-content -->
 		</section><!-- .error-404 -->
 
