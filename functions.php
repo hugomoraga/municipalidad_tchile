@@ -50,7 +50,7 @@ if ( ! function_exists( 'municipalidad_tchile_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Primary', 'municipalidad_tchile' ),
+				'menu-1' => esc_html__( 'Default Menu', 'municipalidad_tchile' ),
 			)
 		);
 
@@ -263,6 +263,8 @@ register_nav_menu('main-menu', 'Main menu');
 function declare_menus() {
 	register_nav_menu('topbar', 'Topbar');
 	register_nav_menu('search_sugestions', 'sugerencias de búsqueda');
+	register_nav_menu('footer_menu', 'Links del footer');
+
   }
   add_action( 'init', 'declare_menus' );
 

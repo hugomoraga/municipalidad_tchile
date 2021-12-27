@@ -54,41 +54,18 @@ footer button {
                     <h4 class="fw-bold fs-3 pt-3">Enlaces</h4>
                     <div class="row">
                         <div class="col-6">
-                            <ul class="list-unstyled">
                                 <?php
                                 wp_nav_menu(array(
-                                    'items_wrap' => '%3$s',
+                                    'theme_location' => 'footer_menu',
+                                    'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
                                     'link_class' => 'nav-link',
                                     'before' => '<i class="fas fa-caret-right text-info pe-2"></i>',
-
-
-
                                 ));
-
                                 ?>
                                 
-                            </ul>
                         </div>
                         <div class="col-6">
 
-                            <ul class="list-unstyled ">
-                                <li>
-                                    <i class="fas fa-caret-right text-info pe-2"></i><a href="#!"
-                                        class="text-primary py-2">Enlace 1</a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-caret-right text-info pe-2"></i><a href="#!"
-                                        class="text-primary py-2">Enlace 2</a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-caret-right text-info pe-2"></i><a href="#!"
-                                        class="text-primary py-2">Enlace 3</a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-caret-right text-info pe-2"></i><a href="#!"
-                                        class="text-primary py-2">Enlace 4</a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
 
