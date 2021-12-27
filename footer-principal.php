@@ -57,7 +57,12 @@ footer button {
                             <ul class="list-unstyled">
                                 <?php
                                 wp_nav_menu(array(
-                                    'items_wrap' => '<i class="fas fa-caret-right text-info pe-2"></i><a href="#!"class="text-primary py-2">%3$s</a>',
+                                    'items_wrap' => '%3$s',
+                                    'link_class' => 'nav-link',
+                                    'before' => '<i class="fas fa-caret-right text-info pe-2"></i>',
+
+
+
                                 ));
 
                                 ?>
