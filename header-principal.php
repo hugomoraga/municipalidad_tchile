@@ -58,7 +58,7 @@
           <div class=" collapse navbar-collapse " id="main-menu">
             <?php
             wp_nav_menu(array(
-                'theme_location' => 'menu-1',
+                'theme_location' => 'main-menu',
                 'container' => false,
                 'menu_class' => 'px-5 py-3',
                 'fallback_cb' => '__return_false',
