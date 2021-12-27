@@ -14,10 +14,11 @@ class Utils{
 		$bg_class = [''                  => 'Sin estilo',
                      
                      'bg-primary'        => 'Color Primario',
-                     'bg-secondary'        => 'Color Secundario',
+                     'bg-secondary'      => 'Color Secundario',
+                     'bg-tertiary'       => 'Color Terciario',
                      'bg-gray'           => 'Gris',
                      'bg-info'           => 'Info',
-                     'bg-danger'           => 'Danger',
+                     'bg-danger'         => 'Danger',
                      
                 ];
         if ($extra)

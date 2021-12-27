@@ -25,9 +25,11 @@ $black:    #000 !default;
 
 $primary:   $naranjo;
 $secondary: $azul;
+$tertiary: $turquesa;
 
+$theme-colors: (
+  "tertiary": $turquesa
+);
 
 @import "bootstrap/scss/bootstrap.scss";
-
-
 
