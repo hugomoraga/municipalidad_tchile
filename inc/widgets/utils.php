@@ -14,7 +14,7 @@ class Utils{
 		$bg_class = [''                  => 'Sin estilo',
                      
                      'bg-primary'        => 'Color Primario',
-                     'bg-primary'        => 'Color Secundario',
+                     'bg-secondary'        => 'Color Secundario',
                      'bg-gray'           => 'Gris',
                      'bg-info'           => 'Info',
                      'bg-danger'           => 'Danger',
