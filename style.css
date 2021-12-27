@@ -64,3 +64,11 @@
 .navbar-dark .navbar-nav .nav-link {
     color:#ffffff;
 }
+
+.card-album .overlay-shadow {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .2));
+}
+
