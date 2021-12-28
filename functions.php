@@ -144,8 +144,10 @@ add_action( 'widgets_init', 'municipalidad_tchile_widgets_init' );
  * Enqueue scripts and styles.
  */
 function municipalidad_tchile_scripts() {
-	wp_enqueue_style( 'municipalidad_tchile-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'municipalidad_tchile-style', 'rtl', 'replace' );
+//	wp_style_add_data( 'municipalidad_tchile-style', 'rtl', 'replace' );
+wp_enqueue_style( 'custom', get_template_directory_uri() . '/assets/css/custom.css');
+
+wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/css/main.css');
 
 	wp_enqueue_script( 'municipalidad_tchile-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 

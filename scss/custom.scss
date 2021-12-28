@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+
+
+// Patron de Colores //
+$fire-engine-red: #ca2330;
+$blue-ncs: #0082B6;
+$teal-blue: #367489;
+$saffron: #E5BB25;
+$naranjo: #f27900;
+$azul: #2782cc;
+$amarillo: #e5bb0c;
+$turquesa: #36929e;
+$azul: #211c4c;
+
+// Modificacion de variables //
+
+$primary:   $naranjo;
+$secondary: $azul;
+$btn-padding-y:               1rem;
+$btn-padding-x:               0.8rem;
+$btn-font-family:             "Inter", sans-serif;
+$btn-font-size:               1rem;
+$link-decoration:  none;
+
+@import "bootstrap/scss/bootstrap";

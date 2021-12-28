@@ -56,9 +56,9 @@ footer button {
                         <div class="col-6">
                                 <?php
                                 wp_nav_menu(array(
+                                    'menu_class'     => 'navbar-nav',
                                     'theme_location' => 'footer_menu',
                                     'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-                                    'link_class' => 'nav-link py-3',
                                     'before' => '<i class="fas fa-caret-right text-info pe-2"></i>',
                                 ));
                                 ?>
