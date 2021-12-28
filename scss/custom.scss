@@ -12,14 +12,16 @@ $amarillo: #e5bb0c;
 $turquesa: #36929e;
 $azul: #211c4c;
 
-
 // Modificacion de variables //
 
 $primary:   $naranjo;
 $secondary: $azul;
 $info: $turquesa;
-$btn-font-family:             "Inter", sans-serif;
+$btn-font-family: "Inter", sans-serif;
 $link-decoration:  none;
 $font-family-sans-serif: "Inter", sans-serif;
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-bold:            700;
 
 @import "bootstrap/scss/bootstrap";

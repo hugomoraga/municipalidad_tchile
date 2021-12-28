@@ -18,32 +18,33 @@ $menu_principal = wp_nav_menu(array(
 }
 </style>
 
-<div class="navbar navbar-expand-md fs-6 shadow-sm" style="background-color:#F5F5F5;">
+<div class="navbar navbar-expand-md shadow-sm bg-info">
     <div class="row w-100">
         <div class="col-md-12 d-flex align-items-center justify-content-around">
             <section class="navbar-area navbar-eight">
                 <div class="container-fluid ">
-                    <div class="inner-header">
-                        <div class="col-lg-12">
+                    <div class="inner-header row">
+                        <div class="col-lg-3">
+                            <div class="navbar-brand"><?php the_custom_logo(); ?>
+                            </div>
+                        </div>
 
+                        <div class="col-lg-9 d-flex align-items-center">
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false"
                                 aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-list text-primary" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+</svg>
                             </button>
                             <div class=" collapse navbar-collapse " id="main-menu">
-                                <div class="navbar-brand"><?php the_custom_logo(); ?>
-                                </div>
-
                                 <?php echo $menu_principal ?>
-
                             </div>
                         </div>
                     </div>
+
                 </div>
             </section>
         </div>
-  
-
     </div>
 </div>
