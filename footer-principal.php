@@ -31,7 +31,7 @@ footer button {
 </style>
 <footer>
     <div class="container">
-        <div class="row">
+        <div class="row d-flex justify-content-start">
             <div class="col-md-4">
                 <div class="row d-flex justify-content-center p-3">
                     <div class="col-12 p-2">
