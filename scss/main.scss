@@ -4,16 +4,16 @@
   ===========================*/
   :root {
     --font-family: 'Inter', sans-serif;
-    --primary: #f27900;
+    --primary: #36929e;
     --primary-dark: #1a0d00;
-    --primary-light: #e2f1ff;
+    --primary-light: #f27900;
     --accent: #00d4d7;
     --accent-dark: #00bac1;
     --accent-light: #dff9f8;
     --success: #13d527;
     --success-dark: #00ae11;
     --success-light: #eafbe7;
-    --secondary: #211c4c;
+    --secondary: #f27900;
     --secondary-dark: #0e0b2e;
     --secondary-light: #e2f1ff;
     --info: #15b2d5;
@@ -35,7 +35,7 @@
     --gray-3: #cdcdcd;
     --gray-4: #e0e0e0;
     --light-1: #efefef;
-    --light-2: #f5f5f5;
+    --light-2: #74ccd4;
     --light-3: #fafafa;
     --white: #ffffff;
     --gradient-1: linear-gradient(180deg, #155bd5 0%, #1c3ab6 100%);
@@ -255,3 +255,4 @@
   @import "ayro-ui/scss/cards/card-02.scss";
   @import "ayro-ui/scss/navbars/navbar-08";
   @import "ayro-ui/scss/navbars/navbar-01";
+  
