@@ -18,7 +18,7 @@ $menu_principal = wp_nav_menu(array(
 }
 </style>
 
-<div class="navbar navbar-expand-md shadow-sm bg-info">
+<div class="navbar navbar-expand-md shadow-sm" style="background-color:#74ccd4">
     <div class="row w-100">
         <div class="col-md-12 d-flex align-items-center justify-content-around">
             <section class="navbar-area navbar-one">
