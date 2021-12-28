@@ -12,14 +12,18 @@ $amarillo: #e5bb0c;
 $turquesa: #36929e;
 $azul: #211c4c;
 
+
 // Modificacion de variables //
 
 $primary:   $naranjo;
 $secondary: $azul;
+$tertiary: $turquesa;
 $btn-padding-y:               1rem;
 $btn-padding-x:               0.8rem;
 $btn-font-family:             "Inter", sans-serif;
 $btn-font-size:               1rem;
 $link-decoration:  none;
+
+
 
 @import "bootstrap/scss/bootstrap";

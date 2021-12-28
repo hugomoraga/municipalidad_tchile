@@ -53,24 +53,20 @@ footer button {
                 <div class="p-3">
                     <h4 class="fw-bold fs-3 pt-3">Enlaces</h4>
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-12 pt-2">
                                 <?php
                                 wp_nav_menu(array(
-                                    'menu_class'     => 'navbar-nav',
+                                    'menu_class'     => 'navbar-nav flex-row row g-0 row-cols-2',
                                     'theme_location' => 'footer_menu',
                                     'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                                    'add_li_class'  => 'nav-item  col',
                                     'before' => '<i class="fas fa-caret-right text-info pe-2"></i>',
+
                                 ));
-                                ?>
-                                
-                        </div>
-                        <div class="col-6">
-
-                        </div>
+                                ?>       
+                        </div>        
                     </div>
-
                 </div>
-
             </div>
             <div class="col-md-4">
                 <div class="p-3">
