@@ -4,16 +4,16 @@
   ===========================*/
 :root {
   --font-family: 'Inter', sans-serif;
-  --primary: #36929e;
+  --primary: #f27900;
   --primary-dark: #1a0d00;
-  --primary-light: #f27900;
+  --primary-light: #ececec;
   --accent: #00d4d7;
   --accent-dark: #00bac1;
   --accent-light: #dff9f8;
   --success: #13d527;
   --success-dark: #00ae11;
   --success-light: #eafbe7;
-  --secondary: #f27900;
+  --secondary: #211c4c;
   --secondary-dark: #0e0b2e;
   --secondary-light: #e2f1ff;
   --info: #15b2d5;

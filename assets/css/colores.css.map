@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../scss/colores.scss"
+    ],
+    "names": [],
+    "file": "colores.css"
+}
