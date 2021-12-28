@@ -94,7 +94,11 @@ ol {
 }
 
 h1,
-h2,
+h2 {
+  color: var(--primary);
+  font-weight: 600;
+}
+
 h3,
 h4,
 h5,

@@ -23,14 +23,14 @@ $menu_principal = wp_nav_menu(array(
         <div class="col-md-12 d-flex align-items-center justify-content-around">
             <section class="navbar-area navbar-eight">
                 <div class="container-fluid ">
-                    <div class="inner-header row">
-                        <div class="col-lg-3">
+                    <div class="inner-header flex-row row g-0 row-cols-2">
+                        <div class="col-lg-3 col-10">
                             <div class="navbar-brand"><?php the_custom_logo(); ?>
                             </div>
                         </div>
 
-                        <div class="col-lg-9 d-flex align-items-center">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        <div class="col-lg-9 col-2 justofy-content-end d-flex align-items-center">
+                            <button class="navbar-toggler position-relative" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false"
                                 aria-label="Toggle navigation">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-list text-primary" viewBox="0 0 16 16">
