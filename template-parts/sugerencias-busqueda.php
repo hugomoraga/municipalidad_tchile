@@ -6,14 +6,14 @@
     }
     </style>
 
-<div class="pt-3">
+<div class="fix-size pt-3">
 <?php $sugestions = get_menu_items_by_slug("search_sugestions"); 
 $max = !empty($args['max'])? $args['max'] : 10;
 
 $i = 0;
 foreach ($sugestions as $item):
     $title = get_sugestion_title($item);
-    echo "<a class='btn btn-secondary btn-lg' href='$item->url'>$title</a>";
+    echo "<a class='btn btn-outline-primary border border-secodnary border-2 rounded-pill px-3 py-2 m-2 ' href='$item->url'>$title</a>";
     
     if ($i > $max)
         break;
