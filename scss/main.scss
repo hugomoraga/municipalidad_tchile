@@ -1,19 +1,21 @@
- @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
-  /*===========================
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+@import "colores";
+
+ /*===========================
     COMMON css 
   ===========================*/
   :root {
     --font-family: 'Inter', sans-serif;
-    --primary: #36929e;
+    --primary: #{$primary};
     --primary-dark: #1a0d00;
-    --primary-light: #f27900;
+    --primary-light: #ececec;
     --accent: #00d4d7;
     --accent-dark: #00bac1;
     --accent-light: #dff9f8;
     --success: #13d527;
     --success-dark: #00ae11;
     --success-light: #eafbe7;
-    --secondary: #f27900;
+    --secondary: #{$secondary};
     --secondary-dark: #0e0b2e;
     --secondary-light: #e2f1ff;
     --info: #15b2d5;
@@ -25,7 +27,7 @@
     --error: #e6185e;
     --error-dark: #bf1257;
     --error-light: #fce4eb;
-    --tertiary: #36929e;
+    --tertiary: #{$tertiary};
     --black: #1d1d1d;
     --dark-1: #2d2d2d;
     --dark-2: #4d4d4d;
