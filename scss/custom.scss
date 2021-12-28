@@ -17,13 +17,9 @@ $azul: #211c4c;
 
 $primary:   $naranjo;
 $secondary: $azul;
-$tertiary: $turquesa;
-$btn-padding-y:               1rem;
-$btn-padding-x:               0.8rem;
+$info: $turquesa;
 $btn-font-family:             "Inter", sans-serif;
-$btn-font-size:               1rem;
 $link-decoration:  none;
-
-
+$font-family-sans-serif: "Inter", sans-serif;
 
 @import "bootstrap/scss/bootstrap";
