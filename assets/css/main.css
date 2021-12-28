@@ -195,6 +195,7 @@ p {
   }
 }
 
+/* custom button */
 .btn {
   font-weight: bold;
   font-size: 16px;
@@ -265,6 +266,13 @@ p {
   width: 40px;
   height: 40px;
   line-height: 40px;
+}
+
+/* Custom Link Navbar 8*/
+.navbar-eight .navbar-nav .nav-item a {
+  color: var(--secondary) !important;
+  font-size: 1.05rem !important;
+  font-weight: 500 !important;
 }
 
 /*===========================
@@ -523,7 +531,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   padding: 32px 0;
-  color: var(--dark-2);
+  color: var(--secondary);
   text-transform: capitalize;
   position: relative;
   border-radius: 5px;

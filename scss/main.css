@@ -267,6 +267,10 @@ p {
   line-height: 40px;
 }
 
+.navbar-eight .navbar-nav .nav-item a {
+  color: var(--primary);
+}
+
 /*===========================
   card-01 css
 ===========================*/
