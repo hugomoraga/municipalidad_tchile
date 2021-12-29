@@ -3,7 +3,7 @@ $the_loop = new WP_query(array(
 'posts_per_page' => 3,  
 'post_type' => 'informacion',
 ));
-$color = 2;
+$color = 1;
 $max_color = 4;
 ?>
 <style>

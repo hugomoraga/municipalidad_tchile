@@ -4,7 +4,7 @@ $the_loop = new WP_query(array(
 'post_type' => 'informacion',
 'category_name' => 'decretos'
 ));
-$color = 2;
+$color = 1;
 $max_color = 4;
 ?>
 <style>

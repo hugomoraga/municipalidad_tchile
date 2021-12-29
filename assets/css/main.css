@@ -275,6 +275,22 @@ p {
   font-weight: 500 !important;
 }
 
+.info-1 {
+  background-color: #dc3545;
+}
+
+.info-2 {
+  background-color: #f8ce44;
+}
+
+.info-3 {
+  background-color: #48e22c;
+}
+
+.info-4 {
+  background-color: #15b2d5;
+}
+
 /*===========================
   card-01 css
 ===========================*/
