@@ -221,7 +221,7 @@ class CardGallery extends Widget_Base{
 
         <div class="col col-card">
           <div class="card card-album <?= $bg_class; ?> border-0 h-100  <?= $hover_effect;?>">
-            <img src="<?= $thumbnail ?>" class="card-img " style="height: <?= $img_height; ?>; object-fit: cover; border-radius: 5px;">
+            <img src="<?= $thumbnail ?>" class="card-img " style="height: <?= $img_height; ?>; object-fit: cover; border-radius: 5px 5px 0 0;">
             <div class="overlay-shadow" style=""></div>
             <div class="card-body <?= $bg_class; ?>" style="text-align:center">
               <a href="<?=get_the_permalink(get_the_id())?>" class="text-white stretched-link"  aria-disabled="true">
