@@ -208,7 +208,12 @@ class CardGallery extends Widget_Base{
     $cid = rand(9999999, 999999999);
 
     ?>
-    
+    <style>
+      .card-body {
+        padding: 5px 16px 0px 16px;
+      }
+    </style>
+
     <div class="container p-0">
       <div class="row row-cols-1 row cols-sm-2 row-cols-md-<?= $row_cols ?> g-<?= $row_cols_gap;?>" id="cards_to_filter<?php echo $cid; ?>">
         <?php 
