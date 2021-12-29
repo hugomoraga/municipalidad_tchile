@@ -11,6 +11,9 @@
 
 ?>
 <style>
+    .elementor-grid-item {
+        margin: 0 3px;
+    }
 footer {
     border-top: 3px solid #02d3c9;
     padding: 55px 0px 55px 0px;
@@ -71,6 +74,41 @@ footer button {
             <div class="col-md-4">
                 <div class="p-3">
                     <h4 class="fw-bold fs-3 pt-3">Contactos</h4>
+
+                    <div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2796472 elementor-shape-circle e-grid-align-right elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="2796472" data-element_type="widget" data-widget_type="social-icons.default">
+				            <div class="elementor-widget-container">
+					            <div class="elementor-social-icons-wrapper elementor-grid">
+							        <span class="elementor-grid-item">
+				                    	<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-animation-shrink elementor-repeater-item-46bc525" href="https://www.facebook.com/pages/Municipalidad-de-La-Calera/1481023582148708" target="_blank">
+				                    		<span class="elementor-screen-only">Facebook-f</span>
+				                    		<i class="fab fa-facebook-f"></i>					</a>
+				                    </span>
+							        <span class="elementor-grid-item">
+				                    	<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-animation-shrink elementor-repeater-item-4a4ca25" href="https://twitter.com/MuniLaCalera" target="_blank">
+				                    		<span class="elementor-screen-only">Twitter</span>
+				                    		<i class="fab fa-twitter"></i>					</a>
+				                    </span>
+							        <span class="elementor-grid-item">
+				                    	<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-animation-shrink elementor-repeater-item-6d4da6c" href="https://www.youtube.com/user/lacaleracomunaviva" target="_blank">
+				                    		<span class="elementor-screen-only">Youtube</span>
+				                    		<i class="fab fa-youtube"></i>					</a>
+				                    </span>
+							        <span class="elementor-grid-item">
+				                    	<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-animation-shrink elementor-repeater-item-d57756f" href="https://www.instagram.com/munilacalera/" target="_blank" style="background-color: #6C1175;">
+				                    		<span class="elementor-screen-only">Instagram</span>
+				                    		<i class="fab fa-instagram"></i>					</a>
+				                    </span>
+							        <span class="elementor-grid-item">
+				                    	<a class="elementor-icon elementor-social-icon elementor-social-icon-phone-alt elementor-animation-shrink elementor-repeater-item-7926254" target="_blank" style="background-color: #1BB434;">
+				                    		<span class="elementor-screen-only">Phone-alt</span>
+				                    		<i class="fas fa-phone-alt"></i>					</a>
+				                    </span>
+					            </div>
+				            </div>
+				        </div>
+					</div>
+
                 </div>
             </div>
         </div>
