@@ -18,10 +18,10 @@ $menu_principal = wp_nav_menu(array(
 }
 </style>
 
-<div class="navbar navbar-expand-md shadow-sm" style="background-color:#74ccd4">
+<div class="navbar navbar-expand-md shadow-sm bg-light" >
     <div class="row w-100">
         <div class="col-md-12 d-flex align-items-center justify-content-around">
-            <section class="navbar-area navbar-eight">
+            <section class="navbar-area navbar-eight bg-menu">
                 <div class="container-fluid ">
                     <div class="inner-header flex-row row g-0 row-cols-2">
                         <div class="col-lg-3 col-10">

@@ -28,6 +28,10 @@ get_header('principal');
         </div>
     </div>
 
+       <!--  SECCION INFORMACIONES -->
+       <?php get_template_part( 'components/menu-servicios');?>
+
+
     <!--  SECCION NOTICIAS -->
     <?php get_template_part( 'components/noticias');?>
 

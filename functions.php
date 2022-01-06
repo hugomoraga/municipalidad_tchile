@@ -269,7 +269,11 @@ register_nav_menu('main-menu', 'Main menu');
 function declare_menus() {
 	register_nav_menu('topbar', 'Topbar');
 	register_nav_menu('search_sugestions', 'sugerencias de búsqueda');
+	register_nav_menu('menu_servicios', 'Servicios');
+
 	register_nav_menu('footer_menu', 'Links del footer');
+	
+
 
   }
   add_action( 'init', 'declare_menus' );
