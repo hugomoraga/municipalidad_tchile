@@ -29,6 +29,10 @@ get_header('principal');
     <!--  SECCION NOTICIAS -->
     <?php get_template_part( 'components/noticias');?>
 
+    
+    <!--  SECCION REDES SOCIALES -->
+    <?php get_template_part( 'components/redes-sociales');?>
+
     <!--  SECCION INFORMACIONES -->
     <?php get_template_part( 'components/decretos');?>
 

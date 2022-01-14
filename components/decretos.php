@@ -25,7 +25,7 @@ $max_color = 4;
             <?php while ($the_loop -> have_posts() ) : $the_loop -> the_post(); ?>
             
             <div class="col p-3">
-                <div class="single-card card-style-one">
+                <div class="single-card card-style-one  elementor-animation-shrink">
                     <div class="d-flex justify-content-center" style=" background-color:#AADAFF;">
 
                         <a href="<?php the_permalink(); ?>">
