@@ -1,6 +1,6 @@
 <?php
 $the_loop = new WP_query(array(
-'posts_per_page' => 4,  
+'posts_per_page' => 3,  
 'post_type' => 'post',
 ));
 ?>
@@ -26,7 +26,8 @@ $the_loop = new WP_query(array(
         </div>
 
         <div class="row">
-            <div class="col-12">
+            <div class="col-4"> NOTICIA SLIDER DESTACADA</div>
+            <div class="col-8">
                 <div class="row justify-content-center pb-5">
 
                     <?php if ($the_loop -> have_posts() ) : ?>
