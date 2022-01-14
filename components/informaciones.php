@@ -4,7 +4,7 @@ $the_loop = new WP_query(array(
 'post_type' => 'informacion',
 ));
 $color = 1;
-$max_color = 4;
+$max_color = 5;
 ?>
 <style>
     .no-info {
