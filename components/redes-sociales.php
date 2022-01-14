@@ -10,7 +10,11 @@
         Twitter
     </div>
     <div class="col-md-4">
-        Instagram
+        <div style="height:400px; overflow-y: scroll;">
+        <?php echo do_shortcode( '[instagram-feed]' ); ?>
+
+        </div>
+
     </div>
 </div>
 </section>
