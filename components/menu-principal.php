@@ -5,7 +5,7 @@ $menu_principal = wp_nav_menu(array(
 'container' => false,
 'menu_class' => '',
 'fallback_cb' => '__return_false',
-'items_wrap' => '<ul id="%1$s" class="w-100 d-flex justify-content-center navbar-nav me-auto mb-2 mb-md-0 %2$s">%3$s</ul>',
+'items_wrap' => '<ul id="%1$s" class="w-100 d-flex text-uppercase justify-content-center navbar-nav me-auto mb-2 mb-md-0 %2$s">%3$s</ul>',
 'depth' => 2,
 'walker' => new bootstrap_5_wp_nav_menu_walker()
 ));
@@ -18,7 +18,7 @@ $menu_principal = wp_nav_menu(array(
 }
 </style>
 
-<div class="navbar navbar-expand-md shadow-sm bg-light" >
+<div class="navbar navbar-expand-md shadow-sm" style="background-color: var(--tertiary);" >
     <div class="row w-100">
         <div class="col-md-12 d-flex align-items-center justify-content-around">
             <section class="navbar-area navbar-eight bg-menu">

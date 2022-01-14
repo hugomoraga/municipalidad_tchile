@@ -5,6 +5,11 @@
 }
     }
     </style>
+<div class="col-lg-3 text-white p-3 bg-qn d-none d-lg-block bg-search bg-quenecesitas"
+                style="background-color:#211c4c;">
+                <div class="container p-0">
+                    <div class="pt-2">
+                        <p class="fs-4 text-center fw-bold text-white">¿Qué Buscas?</p>
 
 <div class="fix-size pt-3">
 <?php $sugestions = get_menu_items_by_slug("search_sugestions"); 
@@ -22,3 +27,8 @@ endforeach;
 ?>
 </div>
 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div

@@ -5,23 +5,26 @@ $menu_servicios = wp_nav_menu(array(
 'container' => false,
 'menu_class' => '',
 'fallback_cb' => '__return_false',
-'items_wrap' => '<ul id="%1$s" class="w-100 d-flex justify-content-center me-auto mb-2 mb-md-0 %2$s">%3$s</ul>',
+'items_wrap' => '<ul id="%1$s" class=" d-flex justify-content-center me-auto %2$s px-4">%3$s</ul>',
 'depth' => 2,
-'add_li_class' => 'col-md-3 p-3 border boder-3 shadow-sm d-flex justify-content-center text-white m-2 fw-bold rounded'
+'add_li_class' => 'col-md-3 p-2 py-4 border border-3 shadow-sm d-flex justify-content-center text-white m-2 fw-bold rounded rounded-pill bg-primary'
 ));
 ?>
 
 <style>
-    #menu-menu-servicios > li > a { 
+    #menu-servicios > li > a { 
         color: white;
-        font-size: 1.25rem;
+        
 }
-    #menu-menu-servicios > li > a:hover { 
+    #menu-servicios > li > a:hover { 
         color: #c5c6c6;
+    }
+ 
 }
 </style>
 
+<div class="px-5 pt-4">
 
-<div class="container p-2">
-    <?php echo $menu_servicios ?> 
+<?php echo $menu_servicios ?> 
+
 </div>

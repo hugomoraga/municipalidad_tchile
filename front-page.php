@@ -6,30 +6,24 @@ Template Name: Home
 
 get_header('principal');
 ?>
-<main class="container-fluid p-0" style="min-height: 50vh;">
+<main class="container-fluid p-0 " style="min-height: 50vh; background-color: #f0f2f5">
+
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v12.0&appId=213640426359512&autoLogAppEvents=1" nonce="GeKzkFHM"></script>
 
     <!--  SECCION SLIDER -->
 
-    <div class="bg-slider-section container-fluid">
+    <div class="bg-slider-section container shadow ">
         <div class="row ">
-            <div class="col-lg-9 col-md-12 px-0">
+            <div class="col-md-12 px-0">
                 <?php add_revslider('principal','homepage'); ?>
-            </div>
-            <div class="col-lg-3 text-white p-3 bg-qn d-none d-lg-block bg-search bg-quenecesitas"
-                style="background-color:#211c4c;">
-                <div class="container p-0">
-                    <div class="pt-2">
-                        <p class="fs-4 text-center fw-bold text-white">¿Qué Buscas?</p>
-
-                        <?php get_template_part( 'template-parts/sugerencias-busqueda', null, array("max" => 10));?>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
+ 
+    <div class="container shadow p-0">
 
-       <!--  SECCION INFORMACIONES -->
-       <?php get_template_part( 'components/menu-servicios');?>
+    <!--  SECCION MENU SERVICIOS -->
+    <?php get_template_part( 'components/menu-servicios');?>
 
 
     <!--  SECCION NOTICIAS -->
@@ -40,6 +34,9 @@ get_header('principal');
 
     <!--  SECCION ELEMENTOR -->
     <?php the_content();?>
+
+    </div>
+
 
 </main>
 <?php

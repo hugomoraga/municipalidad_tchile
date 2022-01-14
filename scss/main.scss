@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "colores";
 
  /*===========================
     COMMON css 
   ===========================*/
   :root {
-    --font-family: 'Inter', sans-serif;
+    --font-family: 'Mulish', sans-serif;
     --primary: #{$primary};
     --primary-dark: #1a0d00;
     --primary-light: #ececec;
@@ -18,6 +19,7 @@
     --secondary: #{$secondary};
     --secondary-dark: #0e0b2e;
     --secondary-light: #e2f1ff;
+    --tertiary: #{$tertiary};
     --info: #15b2d5;
     --info-dark: #0f8ca8;
     --info-light: #e0f5fa;
@@ -260,14 +262,20 @@
 
 /* Custom Link Navbar 8*/
   .navbar-eight .navbar-nav .nav-item a {
-    color: var(--secondary) !important;
+    color: var(--light-1) !important;
     font-size: 1.05rem !important;
-    font-weight: 500 !important;
+    font-weight: 700 !important;
   }
 
   .navbar-eight.bg-menu .inner-header {
-    background-color: #f8f9fa;
+    background-color: var(--tertiary);
   }
+  
+  .navbar-eight .navbar-nav .nav-item .sub-menu {
+    background-color: var(--tertiary) !important;
+    color: var(--secondary) !important;
+  }
+
 
   .info-1 {
     background-color: $info1;
