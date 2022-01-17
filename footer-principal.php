@@ -38,11 +38,11 @@ footer p {
     line-height: 1.2;
     letter-spacing: 0.5px;
 }
-.p-2 {
+footer .p-2 {
     padding: 0 5px 0 0 !important;
     text-align:right;
 }
-.p-i {
+footer .p-i {
     padding: 10px 10px 0px 0px !important;
     height: 100%;
     border-right: solid 1px #fff;

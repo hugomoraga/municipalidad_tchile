@@ -12,6 +12,28 @@ $the_loop = new WP_query(array(
     text-align: right;
     color: black;
 }
+rs-module {
+    border-radius: 9px; 
+}
+.rs-layer {
+    vertical-align: text-bottom;
+}
+.destacada {
+    line-height: 42px;
+}
+
+/*.noticias .btn-primary {
+    margin: 20px 0 0 7px;
+    padding: 5px 7px 5px 15px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 20px;
+}
+.noticias .btn-primary:hover, .noticias .btn-primary:active{
+    color: #fff;
+}*/
+
 </style>
 
 
@@ -42,7 +64,7 @@ $the_loop = new WP_query(array(
         </div>
 
         <div class="row">
-            <div class="col-6"> NOTICIA DESTACADA
+            <div class="col-6 destacada">NOTICIA DESTACADA
                 <!--<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -100,6 +122,10 @@ $the_loop = new WP_query(array(
                         </div>
                     </div>
                     <?php endwhile; ?>
+                    <div>
+                        <a href="<?php echo home_url()."/noticias"; ?>" class="btn btn-primary rounded-pill text-white">Ver más
+                        <i class="fas fa-chevron-circle-right fa-lg " style="vertical-align: -0.1em; margin-left:1px"></i></a>
+                    </div>
                     <?php wp_reset_postdata(); ?>
 
                     <?php else: ?>

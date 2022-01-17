@@ -7,7 +7,7 @@ $menu_servicios = wp_nav_menu(array(
 'fallback_cb' => '__return_false',
 'items_wrap' => '<ul id="%1$s" class=" d-flex justify-content-center me-auto %2$s px-4">%3$s</ul>',
 'depth' => 2,
-'add_li_class' => 'elementor-animation-shrink col-md-3 p-2 py-4 border border-3 shadow-sm d-flex justify-content-center text-white m-2 fw-bold rounded rounded-pill bg-primary'
+'add_li_class' => 'elementor-animation-shrink col-md-3 p-2 py-4 border border-3 shadow-sm d-flex justify-content-center text-white fw-bold rounded rounded-pill bg-primary'
 ));
 ?>
 
