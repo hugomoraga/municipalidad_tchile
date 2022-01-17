@@ -1,6 +1,6 @@
 <?php
 $the_loop = new WP_query(array(
-'posts_per_page' => 3,  
+'posts_per_page' => 2,  
 'post_type' => 'post',
 ));
 ?>
@@ -18,6 +18,22 @@ $the_loop = new WP_query(array(
 <section class="noticias p-5">
         <div class="text-secondary"> <span class="border-start  border-5  border-primary px-3 display-6 fw-bold text-uppercase">Noticias</span> </div>
 
+        <!--<figure class="wp-block-gallery alignwide columns-3 is-cropped">
+            <ul class="blocks-gallery-grid">
+                <li class="blocks-gallery-item"><figure>
+                    <img loading="lazy" src="http://sernatur.tchile.com/hostal6/wp-content/uploads/2022/01/322300564-1.jpg" alt="" data-id="1161" class="wp-image-1161" ></figure>
+                </li>
+                <li class="blocks-gallery-item"><figure>
+                    <img loading="lazy" src="http://sernatur.tchile.com/hostal6/wp-content/uploads/2022/01/salacafe1.png" alt="" data-id="1182" class="wp-image-1182" sizes="(max-width: 949px) 100vw, 949px">
+                </figure></li>
+                <li class="blocks-gallery-item"><figure>
+                    <img loading="lazy" src="http://sernatur.tchile.com/hostal6/wp-content/uploads/2022/01/images-1-1.jpg" alt="" data-id="1180" class="wp-image-1180">
+                </figure></li>
+                <li class="blocks-gallery-item"><figure>
+                    <img loading="lazy" src="http://sernatur.tchile.com/hostal6/wp-content/uploads/2022/01/images-1.jpg" alt="" data-id="1162" class="wp-image-1162">
+                </figure></li>
+            </ul>
+        </figure> -->
         <div class="row">
             <div class="col-12 d-flex justify-content-center">
                 <?php add_revslider('destacada','homepage'); ?>
@@ -26,8 +42,8 @@ $the_loop = new WP_query(array(
         </div>
 
         <div class="row">
-            <div class="col-4"> NOTICIA SLIDER DESTACADA
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="col-6"> NOTICIA DESTACADA
+                <!--<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                       <img class="d-block w-100" src="..." alt="First slide">
@@ -47,9 +63,10 @@ $the_loop = new WP_query(array(
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                   </a>
-                </div>
+                </div>-->
+                <?php add_revslider('destacada','homepage'); ?>
             </div>
-            <div class="col-8">
+            <div class="col-6">
                 <div class="row justify-content-center pb-5">
 
                     <?php if ($the_loop -> have_posts() ) : ?>
