@@ -287,23 +287,28 @@ p {
 }
 
 .info-1 {
-  background-color: #dc3545;
+  background-color: #8CC63F;
 }
 
 .info-2 {
-  background-color: #f3c428;
+  background-color: #00A999;
 }
 
 .info-3 {
-  background-color: #38dd1b;
+  background-color: #F15A24;
 }
 
 .info-4 {
-  background-color: #15b2d5;
+  background-color: #ED1E79;
 }
 
 .info-5 {
-  background-color: #15b2d5;
+  background-color: #662D91;
+}
+
+/* Custom card */
+.single-card {
+  margin-top: 0;
 }
 
 /*===========================

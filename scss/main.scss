@@ -191,7 +191,6 @@
     background-size: cover;
     background-position: center;
   }
-  
   @media (max-width: 767px) {
     .container {
       padding-left: 20px;
@@ -294,6 +293,11 @@
   }
   .info-5 {
     background-color: $info5;
+  }
+
+  /* Custom card */
+  .single-card {
+    margin-top: 0;
   }
 
   @import "ayro-ui/scss/mixin";
