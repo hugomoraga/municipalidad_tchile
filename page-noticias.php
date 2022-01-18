@@ -23,7 +23,7 @@ $the_loop = new WP_query(array(
 <style>
 	.site-main header {
 		text-align:center;
-		padding: 0px 0px 13px 0px;
+		padding: 40px 0px 13px 0px;
 	}
 	.site-main p {
 		padding: 0px 0px 8px 0px;
@@ -32,6 +32,9 @@ $the_loop = new WP_query(array(
 
 	<main id="primary" class="site-main">
         <div class="container">
+            <header class="entry-header">
+		        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	        </header><!-- .entry-header -->
         <div class="entry-content">
             <div class="row justify-content-start pb-5">
 

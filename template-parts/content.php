@@ -15,9 +15,6 @@
 	.post-thumbnail img {
 		margin-top: 20px;
 	}
-	.entry-header {
-		margin-top: 30px;
-	}
 	.entry-content {
 		padding: 20px 14% 50px 14%;
 		text-align: justify;
@@ -37,11 +34,15 @@
 	}
 </style>
 
+
+<div class="container p-0">
+
+
 <?php
 	if ( is_singular() ) : ?>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light m-0 px-3">
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
-			<ul class="navbar-nav">
+			<ul class=" navbar-nav">
 				<li class="nav-item">
 					<a class="nav-brand" href="<?php echo home_url(); ?>">Inicio</a>
 				</li>
@@ -56,15 +57,16 @@
 				</li>
 				<li class="nav-item">/</li>
 				<li class="nav-item">
-					<a class="nav-brand" href="#"><?php echo get_the_title(); ?></a>
+					<a class="nav-brand fs-bold" href="#"><?php echo get_the_title(); ?></a>
 				</li>
 			</ul>
 		</div>
 	</nav>
 
 <?php endif;?>
+</div>
+<div class="container bg-white pt-3">
 
-<div class="container">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<header class="entry-header">
 			<?php

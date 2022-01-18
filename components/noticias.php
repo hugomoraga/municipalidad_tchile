@@ -47,18 +47,20 @@ rs-module {
                 <div class="row justify-content-center">
                     <?php if ($the_loop -> have_posts() ) : ?>
                         <?php while ($the_loop -> have_posts() ) : $the_loop -> the_post(); ?>
-                            <div class="col">
+                            <div class="col-6">
                                 <div class="single-card card-style-one mt-0">
-                                    <div class="card-image">
-                                        <a href="<?php the_permalink(); ?>">
+                                    <div class=""  style="height: 180px;" >
+                                    <a href="<?php the_permalink(); ?>">
                                             <?php if (has_post_thumbnail( $post->ID ) ): ?>
                                             <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-                                            <img src="<?php echo $image[0]; ?>" class="img-fluid"
-                                                style="width: 100%; object-fit: cover;">
+                                            <img src="<?php echo $image[0]; ?>" class="icard-img-top"
+                                                style="object-fit: cover; height:180px; width: 300px;">
                                             <?php endif; ?>
                                         </a>
+                                        
                                     </div>
-                                    <div class="card-content" style="height: 220px;">
+                              
+                                    <div class="card-content" style="height: 240px;">
                                         <h4 class="card-title fs-6">
                                             <a href="<?php the_permalink(); ?>)"><?php the_title(); ?></a>
                                         </h4>

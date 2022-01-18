@@ -5,7 +5,7 @@ $the_loop = new WP_query(array(
 'category_name' => 'de-tu-interes'
 ));
 $color = 1;
-$max_color = 4;
+$max_color = 5;
 ?>
 <style>
 .no-info {
