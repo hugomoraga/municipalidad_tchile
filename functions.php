@@ -348,6 +348,56 @@ function informacion() {
 	register_post_type( 'informacion', $args );
 }
 
+add_action( 'init', 'ordenanza' );
+function ordenanza() {
+	$args = [
+		'label'  => esc_html__( 'ordenanzas', 'text-domain' ),
+		'labels' => [
+			'menu_name'          => esc_html__( 'ordenanzas', 'municipalidad' ),
+			'name_admin_bar'     => esc_html__( 'ordenanza', 'municipalidad' ),
+			'add_new'            => esc_html__( 'Agregar ordenanza', 'municipalidad' ),
+			'add_new_item'       => esc_html__( 'Agregar nueva ordenanza', 'municipalidad' ),
+			'new_item'           => esc_html__( 'Nueva ordenanza', 'municipalidad' ),
+			'edit_item'          => esc_html__( 'Editar ordenanza', 'municipalidad' ),
+			'view_item'          => esc_html__( 'Ver ordenanza', 'municipalidad' ),
+			'update_item'        => esc_html__( 'Ver ordenanza', 'municipalidad' ),
+			'all_items'          => esc_html__( 'Todas las ordenanzas', 'municipalidad' ),
+			'search_items'       => esc_html__( 'Buscar ordenanzas', 'municipalidad' ),
+			'parent_item_colon'  => esc_html__( 'Ordenanza padre', 'municipalidad' ),
+			'not_found'          => esc_html__( 'No ordenanzas found', 'municipalidad' ),
+			'not_found_in_trash' => esc_html__( 'No ordenanzas found in Trash', 'municipalidad' ),
+			'name'               => esc_html__( 'ordenanzas', 'municipalidad' ),
+			'singular_name'      => esc_html__( 'ordenanza', 'municipalidad' ),
+		],
+		'public'              => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'show_ui'             => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'show_in_rest'        => true,
+		'capability_type'     => 'post',
+		'hierarchical'        => false,
+		'has_archive'         => true,
+		'query_var'           => true,
+		'can_export'          => true,
+		'rewrite_no_front'    => false,
+		'show_in_menu'        => true,
+		'menu_icon'           => 'dashicons-admin-post',
+		'supports' => [
+			'title',
+			'author',
+			'thumbnail',
+		],
+		'taxonomies' => [
+			'category',
+		],
+		'rewrite' => true
+	];
+
+	register_post_type( 'ordenanza', $args );
+}
+
 function add_additional_class_on_li($classes, $item, $args) {
     if(isset($args->add_li_class)) {
         $classes[] = $args->add_li_class;

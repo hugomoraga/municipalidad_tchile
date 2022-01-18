@@ -9,6 +9,7 @@ get_header('principal');
 <style>
     .mec-event-image img {
         min-height: 140px !important;
+        height: 140px;
     }
     .mec-event-carousel-content {
         min-height: 182px;
