@@ -6,6 +6,15 @@ Template Name: Home
 
 get_header('principal');
 ?>
+<style>
+    .mec-event-image img {
+        min-height: 140px !important;
+    }
+    .mec-event-carousel-content {
+        min-height: 182px;
+    }
+</style>
+
 <main class="container-fluid p-0 " style="min-height: 50vh; background-color: #f0f2f5">
 
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v12.0&appId=213640426359512&autoLogAppEvents=1" nonce="GeKzkFHM"></script>
