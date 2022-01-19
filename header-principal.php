@@ -38,15 +38,15 @@
             <div class="" style="">
                 <div class="container p-2  bg-light shadow">
                     <ul class=" list-group list-group-horizontal d-flex justify-content-end ">
-                        <li class="list-group-item bg-transparent border-0  fw-bold "><a href="#"><i
+                        <li class="list-group-item bg-transparent border-0   fs-6"><a href="#"><i
                                     class="fas fa-arrow-circle-right"> </i> Acceso Ley Lobby</a></li>
-                        <li class="list-group-item bg-transparent border-0  fw-bold"><a href="#"><i
+                        <li class="list-group-item bg-transparent border-0 fs-6 "><a href="#"><i
                                     class="fas fa-arrow-circle-right"></i> Ley de transparencia: Solicitar
                                 Informacion</a></li>
-                        <li class="list-group-item bg-transparent border-0  fw-bold"><a href="#"><i
+                        <li class="list-group-item bg-transparent border-0 fs-6 "><a href="#"><i
                                     class="fas fa-arrow-circle-right"></i> Ley de transparencia: Transparencia
                                 Activa</a></li>
-                        <li class="list-group-item bg-transparent "> <?php echo do_shortcode( '[wd_asp id=1]' ); ?> </li>
+                        <li class="list-group-item bg-transparent border-0 p-0"> <?php echo do_shortcode( '[wd_asp id=1]' ); ?> </li>
 
                     </ul>
                 </div>
