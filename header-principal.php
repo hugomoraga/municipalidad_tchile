@@ -46,6 +46,7 @@
                         <li class="list-group-item bg-transparent border-0  fw-bold"><a href="#"><i
                                     class="fas fa-arrow-circle-right"></i> Ley de transparencia: Transparencia
                                 Activa</a></li>
+                        <li class="list-group-item bg-transparent "> <?php echo do_shortcode( '[wd_asp id=1]' ); ?> </li>
 
                     </ul>
                 </div>
