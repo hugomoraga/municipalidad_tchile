@@ -15,16 +15,6 @@
 get_header('principal');
 ?>
 
-<style>
-	.site-main header {
-		text-align:center;
-		padding: 0px 0px 13px 0px;
-	}
-	.site-main p {
-		padding: 0px 0px 8px 0px;
-	}
-</style>
-
 	<main id="primary" class="site-main">
 
 		<?php

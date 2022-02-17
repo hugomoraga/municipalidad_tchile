@@ -10,53 +10,21 @@
 get_header('principal');
 ?>
 
-<style>
-	.page-header {
-		padding: 20px 0 0 0;
-		text-align:center;
-	}
-	.navbar {
-		box-shadow:none;
-	}
-	.navbar li {
-		margin-left:6px;
-		letter-spacing: 1px;
-	}
-	.navbar li, .navbar a {
-		color:#7C7C7D;
-	}
-	.navbar a:hover {
-		color:#1F1F1F;
-	}
-	.row img {
-		text-align:center;
-		width:100%;
-		max-width: 250px;
-		min-width: 155px;
-		border-radius: 3px;
-		height:auto;
-	}
-	.row p {
-		margin: 4px 0 0 0;
-	}
-	.row a {
-		font-size: 17px;
-	}
-</style>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	<div class="collapse navbar-collapse" id="navbarNavDropdown">
-		<ul class="navbar-nav">
-			<li class="nav-item">
-				<a class="nav-brand" href="<?php echo home_url(); ?>">Inicio</a>
-			</li>
-			<li class="nav-item">/</li>
-			<li class="nav-item">
-				<a class="nav-brand" href="#"><?php echo single_cat_title( '', false ); ?></a>
-			</li>
-		</ul>
-	</div>
-</nav>
+<div class="container p-0">
+	<nav class="navbar navbar-expand-lg pt-3 bg-light">
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="d-inline-flex fw-bold">
+				<li class="nav-item">
+					<a class="nav-brand" href="<?php echo home_url(); ?>">Inicio</a>
+				</li>
+				<li class="nav-item">/</li>
+				<li class="nav-item">
+					<span class="nav-brand"><?php echo get_post_type(); ?></span>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</div>
 
 	<main id="primary" class="site-main">
 

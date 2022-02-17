@@ -10,20 +10,6 @@
 get_header('principal');
 ?>
 
-<style>
-	.error-404 {
-		padding: 50px 10% 30px 10%;
-		text-align:center;
-	}
-	h5 {
-		margin: 0 0 5px 0;
-		font-size: 100px;
-	}
-	.page-content {
-		margin: 25px 0px 5px 0px;
-		font-size: 25px;
-	}
-</style>
 	<main id="primary" class="site-main">
 
 		<section class="error-404 not-found">

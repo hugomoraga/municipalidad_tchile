@@ -15,10 +15,7 @@ class Utils{
                      
                      'bg-primary'        => 'Color Primario',
                      'bg-secondary'      => 'Color Secundario',
-                     'bg-tertiary'       => 'Color Terciario',
-                     'bg-gray'           => 'Gris',
                      'bg-info'           => 'Info',
-                     'bg-danger'         => 'Danger',
                      
                 ];
         if ($extra)

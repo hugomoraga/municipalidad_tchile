@@ -47,20 +47,12 @@ class CardGallery extends Widget_Base{
       [
         'label' => 'Tipo galeria',
         'type' => Controls_Manager::SELECT,
-		'options' => ['post' => 'Noticias (Default)',
-                      'foogallery' => 'foogallery'],
-        'default' => 'foogallery'
+		'options' => ['galeria' => 'galerias',
+                  'foogallery' => 'foogallery'],
+        'default' => 'galeria'
       ]
     );
-    $this->add_control(
-      'seccion',
-      [
-        'label' => 'Sección',
-        'type' => \Elementor\Controls_Manager::SELECT2,
-        'options' => $this->list_sections(),
-        'condition' => ['post_type' => 'post']
-        ]
-    );
+ 
 
     $this->add_control(
       'quantity',
@@ -204,7 +196,6 @@ class CardGallery extends Widget_Base{
     $hover_effect = $settings['hover_effect'];
     $img_height   = $settings['thum_height'].'px';
     $show_thumnail= $settings['show_thumnail'];
-    $filter_type  = $settings['filter_type'];
     $cid = rand(9999999, 999999999);
 
     ?>

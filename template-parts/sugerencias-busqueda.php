@@ -1,10 +1,4 @@
-<style>
-    @media (min-width: 992px) and (max-width: 1400px) {
-    .fix-size {
-        height: 200px;
-}
-    }
-    </style>
+
 <div class="col-lg-3 text-white p-3 bg-qn d-none d-lg-block bg-search bg-quenecesitas"
                 style="background-color:#211c4c;">
                 <div class="container p-0">

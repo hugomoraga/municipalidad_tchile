@@ -10,33 +10,6 @@
  */
 
 ?>
-	<style>
-		footer {
-			border-top: 3px solid #02d3c9;
-			padding: 55px 0px 55px 0px;
-		}
-		footer h4 {
-			font-size: 18px;
-			color: #02d3c9;
-		}
-		footer .e-form__buttons {
-			background-color: #02D3C9;
-		}
-		footer button {
-			background-color: transparent !important;
-		}
-		footer .elementor-field-group {
-			margin-bottom: 10px;
-		}
-		footer .elementor-widget-wrap {
-			margin: 0% 10% 0% 0%;
-			padding: 10px;
-		}
-		footer .elementor-grid {
-			font-size: 0;
-			word-spacing: var(--grid-column-gap) !important;
-		}
-	</style>
 	
 	<footer>
 		<div class="container">

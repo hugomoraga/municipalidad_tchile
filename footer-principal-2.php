@@ -10,28 +10,7 @@
  */
 
 ?>
-<style>
-    .elementor-grid-item {
-        margin: 0 3px;
-    }
-footer {
-    border-top: 3px solid #02d3c9;
-    padding: 55px 0px 55px 0px;
-}
 
-footer h4 {
-    font-size: 18px;
-    color: #02d3c9;
-}
-
-footer .e-form__buttons {
-    background-color: #02D3C9;
-}
-
-footer button {
-    background-color: transparent !important;
-}
-</style>
 <footer>
     <div class="container">
         <div class="row d-flex justify-content-start">

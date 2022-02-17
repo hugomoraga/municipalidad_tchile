@@ -10,19 +10,8 @@
 get_header('principal');
 ?>
 
-<style>
-	img {
-		margin-bottom: 5px;
-		margin-top: 30px;
-		height: auto;
-		min-width:195px;
-	}
-	.post-thumbnail {
-		padding: 0px 14% 0px 14%;
-	}
-</style>
 
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main single">
 
 		<?php
 		while ( have_posts() ) :

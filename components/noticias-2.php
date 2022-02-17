@@ -5,15 +5,6 @@ $the_loop = new WP_query(array(
 ));
 ?>
 
-<style>
-.no-notic {
-    padding-top: 10px;
-    font-size: 21px;
-    text-align: right;
-    color: black;
-}
-</style>
-
 
 <section class="noticias p-5">
         <div class="text-secondary"> <span class="border-start  border-5  border-primary px-3 display-6 fw-bold text-uppercase">Noticias</span> </div>

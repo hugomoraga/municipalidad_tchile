@@ -5,27 +5,21 @@ $menu_principal = wp_nav_menu(array(
 'container' => false,
 'menu_class' => '',
 'fallback_cb' => '__return_false',
-'items_wrap' => '<ul id="%1$s" class="w-100 d-flex text-uppercase justify-content-center navbar-nav me-auto mb-2 mb-md-0 %2$s">%3$s</ul>',
+'items_wrap' => '<ul id="%1$s" class="w-100 d-flex text-uppercase justify-content-center navbar-nav me-auto mb-2 mb-md-0 %2$s" style="background-color: var(--secondary) !important;">%3$s</ul>',
 'depth' => 2,
 'walker' => new bootstrap_5_wp_nav_menu_walker()
 ));
 ?>
 
-<style>
-.custom-logo-link>img {
-    width: 230px;
-    height: auto;
-}
-</style>
 
-<div class="navbar navbar-expand-md shadow-sm" style="background-color: var(--tertiary);" >
+<div class="navbar navbar-expand-md shadow-sm w-100" style="background-color: var(--secondary);" >
     <div class="row w-100">
         <div class="col-md-12 d-flex align-items-center justify-content-around">
-            <section class="navbar-area navbar-eight bg-menu">
+            <section class="navbar-area navbar-eight bg-menu w-100"">
                 <div class="container-fluid ">
-                    <div class="inner-header flex-row row g-0 row-cols-2">
+                    <div class=" flex-row row g-0 row-cols-2">
                         <div class="col-lg-3 col-10">
-                            <div class="navbar-brand"><?php the_custom_logo(); ?>
+                            <div class="navbar-brand text-center"><?php the_custom_logo(); ?>
                             </div>
                         </div>
 
@@ -37,7 +31,7 @@ $menu_principal = wp_nav_menu(array(
   <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
 </svg>
                             </button>
-                            <div class=" collapse navbar-collapse " id="main-menu">
+                            <div class=" collapse navbar-collapse text-white " id="main-menu">
                                 <?php echo $menu_principal ?>
                             </div>
                         </div>

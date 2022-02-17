@@ -405,3 +405,83 @@ function add_additional_class_on_li($classes, $item, $args) {
     return $classes;
 }
 add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
+
+
+if ( get_query_var('foogallery') ) {
+
+    // If so echo the value
+    echo get_query_var('foogallery');
+
+}
+
+
+add_action( 'init', 'galeria' );
+function galeria() {
+	$args = [
+		'label'  => esc_html__( 'Galerias', 'text-domain' ),
+		'labels' => [
+			'menu_name'          => esc_html__( 'Galerias', 'municipalidad_tchile' ),
+			'name_admin_bar'     => esc_html__( 'Galeria', 'municipalidad_tchile' ),
+			'add_new'            => esc_html__( 'Añadir Galeria', 'municipalidad_tchile' ),
+			'add_new_item'       => esc_html__( 'Añadir nueva Galeria', 'municipalidad_tchile' ),
+			'new_item'           => esc_html__( 'Nueva Galeria', 'municipalidad_tchile' ),
+			'edit_item'          => esc_html__( 'Editat Galeria', 'municipalidad_tchile' ),
+			'view_item'          => esc_html__( 'Ver Galeria', 'municipalidad_tchile' ),
+			'update_item'        => esc_html__( 'Actualizar Galeria', 'municipalidad_tchile' ),
+			'all_items'          => esc_html__( 'Todas las Galerias', 'municipalidad_tchile' ),
+			'search_items'       => esc_html__( 'Buscar Galerias', 'municipalidad_tchile' ),
+			'parent_item_colon'  => esc_html__( 'Galeria Padre', 'municipalidad_tchile' ),
+			'not_found'          => esc_html__( 'Galeria no encontrada', 'municipalidad_tchile' ),
+			'not_found_in_trash' => esc_html__( 'No se encontraron galerias en la papelera.', 'municipalidad_tchile' ),
+			'name'               => esc_html__( 'Galerias', 'municipalidad_tchile' ),
+			'singular_name'      => esc_html__( 'Galeria', 'municipalidad_tchile' ),
+		],
+		'public'              => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'show_ui'             => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'show_in_rest'        => true,
+		'capability_type'     => 'post',
+		'hierarchical'        => false,
+		'has_archive'         => true,
+		'query_var'           => true,
+		'can_export'          => true,
+		'rewrite_no_front'    => false,
+		'show_in_menu'        => true,
+		'menu_position'       => 10,
+		'menu_icon'           => 'dashicons-format-gallery',
+		'supports' => [
+			'title',
+			'editor',
+			'thumbnail',
+		],
+		'taxonomies' => [
+			'category',
+		],
+		'rewrite' => true
+	];
+
+	register_post_type( 'galeria', $args );
+}
+
+add_action( 'init', 'cp_change_post_object' );
+// Change dashboard Posts to News
+function cp_change_post_object() {
+    $get_post_type = get_post_type_object('post');
+    $labels = $get_post_type->labels;
+        $labels->name = 'Noticia';
+        $labels->singular_name = 'Noticias';
+        $labels->add_new = 'Añadir Noticia';
+        $labels->add_new_item = 'Añadir nueva Noticia';
+        $labels->edit_item = 'Editar Noticia';
+        $labels->new_item = 'Noticia';
+        $labels->view_item = 'Ver Noticia';
+        $labels->search_items = 'Buscar Noticias' ;
+        $labels->not_found = 'No se encontraron noticias';
+        $labels->not_found_in_trash = 'No se encontraron Noticias';
+        $labels->all_items = 'Todas las noticias';
+        $labels->menu_name = 'Noticias';
+        $labels->name_admin_bar = 'Noticias';
+}

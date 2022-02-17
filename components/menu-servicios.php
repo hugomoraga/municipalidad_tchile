@@ -11,24 +11,6 @@ $menu_servicios = wp_nav_menu(array(
 ));
 ?>
 
-<style>
-    #menu-servicios > li > a { 
-        color: white;
-        font-size: 0.9rem;      
-    }
-    #menu-servicios > li > a:hover { 
-        color: #c5c6c6;
-    }
-  
-    #menu-servicios .menu-item  {
-        height: 70px !important;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-    }
-
-</style>
-
 <div class="px-4 pt-4">
 
 <?php echo $menu_servicios ?> 

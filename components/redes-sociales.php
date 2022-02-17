@@ -1,6 +1,6 @@
 <section class="redes-sociales p-5">
 
-<div class="text-secondary"> <span class="border-start  border-5  border-primary px-3 display-6 fw-bold text-uppercase">Redes Sociales</span> </div>
+<div class="text-secondary text-start"> <span class="border-start  border-5  border-primary px-3 display-6 fw-bold text-uppercase">Redes Sociales</span> </div>
 
 <div class="row d-flex justify-content-around p-3 ">
     <div class="col-md-4 p-3 col-sm-12 ">

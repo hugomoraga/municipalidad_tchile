@@ -5,51 +5,20 @@ $the_loop = new WP_query(array(
 ));
 ?>
 
-<style>
-.no-notic {
-    padding-top: 10px;
-    font-size: 21px;
-    text-align: right;
-    color: black;
-}
-rs-module {
-    border-radius: 9px; 
-}
-.rs-layer {
-    vertical-align: text-bottom;
-}
-.destacada {
-    line-height: 42px;
-}
-
-/*.noticias .btn-primary {
-    margin: 20px 0 0 7px;
-    padding: 5px 7px 5px 15px;
-    font-size: 17px;
-    font-weight: 600;
-    color: #fff;
-    border-radius: 20px;
-}
-.noticias .btn-primary:hover, .noticias .btn-primary:active{
-    color: #fff;
-}*/
-
-</style>
-
 
 <section class="noticias p-5">
-    <div class="text-secondary"> <span class="border-start  border-5  border-primary px-3 display-6 fw-bold text-uppercase">Noticias</span> </div>
+    <div class="text-secondary text-start"> <span class="border-start  border-5  border-primary px-3 display-6 fw-bold text-uppercase">Noticias</span> </div>
         <div class="row">
-            <div class="col-6 destacada mt-2">
+            <div class="col-md-6 destacada mt-2 col-12">
                 <?php add_revslider('destacada','homepage'); ?>
             </div>
-            <div class="col-6 mt-2">
+            <div class="col-md-6 col-12 mt-2">
                 <div class="row justify-content-center">
                     <?php if ($the_loop -> have_posts() ) : ?>
                         <?php while ($the_loop -> have_posts() ) : $the_loop -> the_post(); ?>
-                            <div class="col-6">
-                                <div class="single-card card-style-one mt-0">
-                                    <div class=""  style="height: 180px;" >
+                            <div class="col-12 col-md-6 ">
+                                <div class="single-card card-style-one mt-0 m-3 m-sm-0">
+                                    <div class="img-card"  style="height: 180px;" >
                                     <a href="<?php the_permalink(); ?>">
                                             <?php if (has_post_thumbnail( $post->ID ) ): ?>
                                             <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
@@ -62,16 +31,16 @@ rs-module {
                               
                                     <div class="card-content" style="height: 240px;">
                                         <h4 class="card-title fs-6">
-                                            <a href="<?php the_permalink(); ?>)"><?php the_title(); ?></a>
+                                            <a href="<?php the_permalink(); ?>">
+                                            <?php if (strlen($post->post_title) > 60) { echo substr(the_title($before = '', $after = '', FALSE), 0, 60) . '...'; } else { the_title(); } ?>
+                                            </a>
                                         </h4>
-                                        <p class="text">
                                             <?php //Filtro para 20 palabras -Valeria
                                             add_filter( 'excerpt_length', function($length) {
                                                 return 20;
                                             }, PHP_INT_MAX );
                                             the_excerpt();
                                             ?>
-                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -88,7 +57,7 @@ rs-module {
                 </div>
             </div>
 
-            <div class="col-12 mt-3 text-center">
+            <div class="col-12 mt-3 d-flex flex-row-reverse">
                 <a href="<?php echo home_url()."/noticias"; ?>" class="btn btn-primary rounded-pill text-white">
                     Ver más <i class="fas fa-chevron-circle-right fa-lg " style="vertical-align: -0.1em; margin-left:1px"></i>
                 </a>

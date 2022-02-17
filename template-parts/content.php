@@ -8,56 +8,39 @@
  */
 
 ?>
-<style>
-	.container {
-		text-align: center;
-	}
-	.post-thumbnail img {
-		margin-top: 20px;
-	}
-	.entry-content {
-		padding: 20px 14% 50px 14%;
-		text-align: justify;
-	}
-	.navbar {
-		box-shadow:none;
-	}
-	.navbar li {
-		margin-left:6px;
-		letter-spacing: 1px;
-	}
-	.navbar li, .navbar a {
-		color:#7C7C7D;
-	}
-	.navbar a:hover {
-		color:#1F1F1F;
-	}
-</style>
-
 
 <div class="container p-0">
 
 
 <?php
 	if ( is_singular() ) : ?>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light m-0 px-3">
+	<nav class="navbar navbar-expand-lg pt-3 bg-light">
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
-			<ul class=" navbar-nav">
+			<ul class="d-inline-flex fw-bold">
 				<li class="nav-item">
 					<a class="nav-brand" href="<?php echo home_url(); ?>">Inicio</a>
 				</li>
 				<li class="nav-item">/</li>
 				<li class="nav-item">
-					<a class="nav-brand" href="#">
 					<?php
+						$categoria = ""; $param = "?cat="; $cont = 0;
 						foreach((get_the_category()) as $category) {
-						echo $category->cat_name . ' ';
-					} ?>
+						if($cont==0) {
+							$categoria = $categoria . $category->cat_name . ' ';
+							$param = $param . $category->slug;
+						  } $cont++;
+						} if($categoria=="") $categoria=get_post_type();
+					?>
+					<a class="nav-brand" href="<?php echo home_url()."/".get_post_type()."" ?>">
+				<?php	$post_type = get_post_type_object( get_post_type($post) );
+						echo $post_type->label; ?>
+
+
 					</a>
 				</li>
 				<li class="nav-item">/</li>
 				<li class="nav-item">
-					<a class="nav-brand fs-bold" href="#"><?php echo get_the_title(); ?></a>
+					<span class="nav-brand fs-bold"><?php echo get_the_title(); ?></span>
 				</li>
 			</ul>
 		</div>

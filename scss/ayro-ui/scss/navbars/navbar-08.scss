@@ -16,7 +16,6 @@
 
 .navbar-eight {
   .inner-header {
-    background-color: var(--light-2);
     padding: 0 20px;
     border-radius: 10px;
     position: relative;
@@ -76,10 +75,10 @@
   & .navbar-collapse {
     @media #{$md, $xs} {
       position: absolute;
-      top: 123%;
+      top: 90%;
+      background-color: var(--secondary);
       left: 0;
       width: 100%;
-      background-color: var(--light-2);
       z-index: 8;
       padding: 10px 16px;
       border-top: 2px solid var(--gray-3);

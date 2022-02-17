@@ -10,52 +10,7 @@
  */
 
 ?>
-<style>
-    .elementor-grid-item {
-        margin: 0 3px;
-    }
-footer {
-    border-top: 3px solid #FF7A00;
-    background: #FF7A00;
-    padding: 0px 0px 0px 0px;
-}
-footer h4 {
-    font-size: 18px;
-    color: #fff;
-}
-footer .e-form__buttons {
-    background-color: #02D3C9;
-}
 
-footer button {
-    background-color: transparent !important;
-}
-footer p, footer span footer a {
-    color: #fff;
-}
-footer p {
-    font-size: 12px;
-    line-height: 1.2;
-    letter-spacing: 0.5px;
-}
-footer .p-2 {
-    padding: 0 5px 0 0 !important;
-    text-align:right;
-}
-footer .p-i {
-    padding: 10px 10px 0px 0px !important;
-    height: 100%;
-    border-right: solid 1px #fff;
-}
-footer .p-f {
-    padding: 20px 0px 17px 5px !important;
-    height: 100%;
-}
-footer .col-md-6 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-</style>
 <footer>
     <div class="container">
         <div class="row d-flex justify-content-start">

@@ -24,20 +24,8 @@ get_header('principal');
        )
     ));
     ?>
-<style>
-    .site-main {
-        margin-bottom: 70px;
-    }
-	.site-main header {
-		text-align:center;
-		padding: 30px 0px 13px 0px;
-	}
-	.site-main p {
-		padding: 0px 0px 8px 0px;
-	}
-</style>
 
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main ordenanzas">
     <div class="entry-content">
         <div class="container">
             <header class="entry-header">

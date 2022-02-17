@@ -3,7 +3,8 @@
 @import "colores";
 
  /*===========================
-    COMMON css 
+    COMMON css .single img {
+
   ===========================*/
   :root {
     --font-family: 'Mulish', sans-serif;
@@ -102,7 +103,7 @@
    font-weight: 600;
 
  }
-
+ 
   h3,
   h4,
   h5,
@@ -259,9 +260,38 @@
     line-height: 40px;
   }
 
+  /* front-page */
+    .mec-event-image img {
+      min-height: 140px !important;
+      height: 140px;
+    }
+    .mec-event-carousel-content {
+        min-height: 182px;
+    }
+  /* fin*/
+
+    /* page, page-galerias, page-noticias, page-ordenanzas */
+      .site-main .ordenanzas{
+        margin-bottom: 70px;
+      }
+      .site-main header .entry-header {
+        text-align:center;
+        padding: 20px 0px 13px 0px;
+      }
+      .site-main p {
+        padding: 0px 0px 8px 0px;
+      }
+    /* fin page.php*/
+
+    .mec-carousel-type1-head, .mec-event-date-carousel  {
+      background-color: #F3BB00 !important; 
+  }
+
+
+
 /* Custom Link Navbar 8*/
   .navbar-eight .navbar-nav .nav-item a {
-    color: var(--light-1) !important;
+    color: #ffffff !important;
     font-size: 1.05rem !important;
     font-weight: 700 !important;
   }
@@ -270,11 +300,177 @@
     background-color: var(--tertiary);
   }
   
-  .navbar-eight .navbar-nav .nav-item .sub-menu {
-    background-color: var(--tertiary) !important;
+  .navbar-eight .navbar-nav /*.nav-item */ {
+    background-color: var(--secondary) !important;
     color: var(--secondary) !important;
   }
+  .nav-item .sub-menu { /* menu-principal.php */
+    background-color: #211c4c !important;;
+  }
 
+  .nav-item  .sub-menu a {
+    color: #211B4B !important;
+}
+
+.custom-logo-link>img {
+  width: 230px;
+  height: auto;
+}
+
+
+
+  /* content.php, content-page.php style */
+  
+    .post-thumbnail {     /* content-page.php */
+      height: 600px
+    }
+	  .post-thumbnail img { /*    content.php    */
+	  	margin-top: 20px;
+      margin-bottom: 40px;
+      width: 100%;
+      padding-bottom: 20px;
+	  }
+    .post-thumbnail img { /* content-page.php */
+      height: 600px;
+      object-fit: cover;
+    }
+	  .entry-content {  /* content.php, content-page.php */
+	  	padding: 20px 14% 50px 14%;
+	  	text-align: justify;
+	  }
+	  .navbar { /* content.php, content-page.php */
+	  	box-shadow:none;
+	  }
+	  .nav-brand { /* content.php, content-page.php */
+	  	margin-left:6px;
+	  	letter-spacing: 1px;
+	  }
+	  .navbar li, .navbar a { /* content.php, content-page.php, archive.php */
+	  	color:#7C7C7D;
+	  }
+	  .navbar a:hover { /* content.php, content-page.php, archive.php */
+	  	color:#1F1F1F;
+	  }
+    .custom-logo-link>img { /* menu-principal.php */
+      width: 230px;
+      height: auto;
+    }
+        /* Fin content.php */
+    
+  .sub-menu { /* menu-principal.php */
+    background-color: white;
+  }
+  .sub-menu a { /* menu-principal.php */
+    color: #211B4B;
+  }  /* menu-principal.php */
+  .mec-carousel-type1-head, .mec-event-date-carousel  {
+    background-color: #F3BB00 !important; 
+  }
+   .dropdown-item  {
+    color: var(--secondary) !important;
+  }
+  /* menu-servicios.php */
+  #menu-servicios > li > a { 
+    color: white;
+    font-size: 0.9rem;      
+  }
+  #menu-servicios > li > a:hover { 
+      color: #c5c6c6;
+  }
+
+  #menu-servicios .menu-item  {
+      height: 60px !important;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+  }
+  /* fin menu-servicios.php */
+
+  /*   noticias.php   */
+  .no-notic {
+    padding-top: 10px;
+    font-size: 21px;
+    text-align: right;
+    color: black;
+  }
+  .destacada rs-module {
+     border-radius: 9px; 
+  }
+  .rs-layer { vertical-align: text-bottom; }
+  .destacada { line-height: 42px; }
+  /*.noticias .btn-primary {
+      margin: 20px 0 0 7px;
+      padding: 5px 7px 5px 15px;
+      font-size: 17px;
+      font-weight: 600;
+      color: #fff;
+      border-radius: 20px;
+  }
+  .noticias .btn-primary:hover, .noticias .btn-primary:active{
+      color: #fff; }*/
+
+  /* fin noticias.php */
+
+   /*   sugerencias-busqueda.php   */
+  @media (min-width: 992px) and (max-width: 1400px) {
+    .fix-size { height: 200px; }
+  } /* fin sugerencias-busqueda.php */
+
+  /*   404.php   */
+  .error-404 {
+		padding: 50px 10% 30px 10%;
+		text-align:center;
+	}
+	.error-404 h5 {
+		margin: 0 0 5px 0;
+		font-size: 100px;
+	}
+	.page-content {
+		margin: 25px 0px 5px 0px;
+		font-size: 25px;
+	}
+  /* fin 404.php   */
+
+  /* archive.php   */
+  .page-header {
+		padding: 20px 0 0 0;
+		text-align:center;
+	}
+  // .row img {
+	// 	text-align:center;
+	// 	width:100%;
+	// 	max-width: 250px;
+	// 	min-width: 155px;
+	// 	border-radius: 3px;
+	// 	height:auto;
+	// }
+
+  .single-card .img-card img {
+    width:100%;
+  }
+	.row p {
+		margin: 4px 0 0 0
+	}
+	.row a {
+		font-size: 17px;
+	}
+  /* fin archive.php   */
+
+  /* detuinteres.php, informaciones.php */
+  .no-info {
+    padding-top: 10px;
+    font-size: 21px;
+    text-align: right;
+    color: white;
+  } /* fin*/
+
+  /* single-post */
+    .single img {
+	  	margin-bottom: 5px;
+
+    }
+
+  /* fin*/
 
   .info-1 {
     background-color: $info1;
@@ -299,6 +495,71 @@
   .single-card {
     margin-top: 0;
   }
+
+
+  /* /// Custom Style /// */
+
+  /* Footer CSS */
+  
+  .elementor-grid-item {
+    margin: 0 3px;
+  }
+  footer .elementor-field-group {
+    margin-bottom: 10px;
+  }
+  footer .elementor-widget-wrap {
+    margin: 0% 10% 0% 0%; padding: 10px;
+  }
+  footer .elementor-grid {
+    font-size: 0; word-spacing: var(--grid-column-gap) !important;
+  }
+footer {
+border-top: 3px solid #FF7A00;
+background: #FF7A00;
+padding: 0px 0px 0px 0px;
+}
+footer h4 {
+font-size: 18px;
+color: #fff;
+}
+footer .e-form__buttons {
+background-color: #02D3C9;
+}
+
+footer button {
+background-color: transparent !important;
+}
+footer p, footer span footer a {
+color: #fff;
+}
+footer p {
+font-size: 12px;
+line-height: 1.2;
+letter-spacing: 0.5px;
+}
+footer .p-2 {
+padding: 0 5px 0 0 !important;
+text-align:right;
+}
+footer .p-i {
+padding: 10px 10px 0px 0px !important;
+height: 100%;
+border-right: solid 1px #fff;
+}
+footer .p-f {
+padding: 20px 0px 17px 5px !important;
+height: 100%;
+}
+footer .col-md-6 {
+padding-top: 20px;
+padding-bottom: 20px;
+}
+.event-carousel-type1-head .mec-event-date-carousel:after{border-color:transparent transparent #F3BB00 transparent;}
+.navbar-nav {
+background-color: var(--secondary) !important;
+}
+
+
 
   @import "ayro-ui/scss/mixin";
   @import "ayro-ui/scss/variables";

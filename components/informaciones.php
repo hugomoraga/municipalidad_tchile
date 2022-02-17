@@ -6,18 +6,9 @@ $the_loop = new WP_query(array(
 $color = 1;
 $max_color = 5;
 ?>
-<style>
-    .no-info {
-        padding-top: 10px;
-        font-size: 21px;
-        text-align:right;
-        color:white;
-    }
-    
-</style>
 
 <section class="informaciones pb-5 bg-secondary">
-    <div class="container">
+    <div class="container text-start">
         <div class="display-4 text-primary border-bottom border-2 border-light py-3"> Informaciones</div>       
         <div class="row" style="margin:0;width:100%">
 
