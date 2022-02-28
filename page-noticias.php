@@ -22,9 +22,9 @@ $the_loop = new WP_query(array(
 ?>
 
 	<main id="primary" class="site-main">
-        <div class="container">
+        <div class="container-lg bg-white">
             <header class="entry-header">
-		        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		        <?php the_title( '<h1 class="entry-title text-center">', '</h1>' ); ?>
 	        </header><!-- .entry-header -->
         <div class="entry-content">
             <div class="row justify-content-start pb-5">
@@ -32,7 +32,7 @@ $the_loop = new WP_query(array(
                 <?php if ($the_loop -> have_posts() ) : ?>
                 <?php while ($the_loop -> have_posts() ) : $the_loop -> the_post(); ?>
                 
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="single-card card-style-one">
                         <div class="card-image">
                             <a href="<?php the_permalink(); ?>">

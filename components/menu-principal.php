@@ -12,28 +12,41 @@ $menu_principal = wp_nav_menu(array(
 ?>
 
 
-<div class="navbar navbar-expand-md shadow-sm w-100" style="background-color: var(--secondary);" >
-    <div class="row w-100">
+<nav id="menu-principal" class="navbar navbar-expand-md shadow-sm w-100 bg-secondary">
+    <div class="row container-fluid">
         <div class="col-md-12 d-flex align-items-center justify-content-around">
-            <section class="navbar-area navbar-eight bg-menu w-100"">
+            <section class=" w-100"">
                 <div class="container-fluid ">
                     <div class=" flex-row row g-0 row-cols-2">
-                        <div class="col-lg-3 col-10">
-                            <div class="navbar-brand text-center"><?php the_custom_logo(); ?>
+                        <div class="col-xl-3 col-12">
+                            <div class="row">
+                            <div class="col-9 col-md-12">
+                                    <div class="navbar-brand text-center"><?php the_custom_logo(); ?>
+                                    </div>
                             </div>
-                        </div>
-
-                        <div class="col-lg-9 col-2 justofy-content-end d-flex align-items-center">
-                            <button class="navbar-toggler position-relative" type="button" data-bs-toggle="collapse"
+                            <div class="col-3 pt-2 pt-md-0">
+                                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false"
                                 aria-label="Toggle navigation">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-list text-primary" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-</svg>
+                                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                                </svg>
                             </button>
-                            <div class=" collapse navbar-collapse text-white " id="main-menu">
+                            </div>
+
+                     
+                                
+                            </div>
+ 
+                        </div>
+
+                        <div class="col-xl-9 col-12 justify-content-end d-flex align-items-center">
+                  
+                            <div class=" collapse navbar-collapse " id="main-menu">
                                 <?php echo $menu_principal ?>
                             </div>
+
+                   
                         </div>
                     </div>
 
@@ -41,4 +54,78 @@ $menu_principal = wp_nav_menu(array(
             </section>
         </div>
     </div>
-</div>
+</nav>
+
+
+<style>
+#menu-principal ul li a {
+    font-size: 1em;
+    color: white;
+    text-transform: capitalize;
+}
+
+#menu-principal ul li {
+    background-color: transparent !important;
+
+}
+
+
+#menu-principal ul li a:hover {
+}
+
+#menu-principal ul li .sub-menu li a {
+    color: white;
+}
+
+
+
+
+/* Custom Link Navbar 8*/
+#menu-principal .navbar-nav .nav-item a {
+    color: #ffffff !important;
+    font-size: 1.05rem !important;
+    font-weight: 700 !important;
+  }
+
+  #menu-principal .inner-header {
+    background-color: var(--tertiary);
+  }
+  
+  #menu-principal .navbar-nav /*.nav-item */ {
+    background-color: var(--secondary) !important;
+    color: var(--secondary) !important;
+  }
+  #menu-principal .nav-item .sub-menu { /* menu-principal.php */
+    background-color: #211c4c !important;;
+  }
+
+ 
+
+#menu-principal .navbar-nav .nav-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--secondary);
+  text-transform: capitalize;
+  position: relative;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  font-weight: 500;
+}
+
+#menu-principal .navbar-nav .nav-item a::before {
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0%;
+  background-color: var(--primary);
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+</style>

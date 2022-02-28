@@ -26,8 +26,9 @@ get_header('principal');
     ?>
 
 	<main id="primary" class="site-main ordenanzas">
+    <div class="container-lg bg-white">
+
     <div class="entry-content">
-        <div class="container">
             <header class="entry-header">
 		        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	        </header><!-- .entry-header -->
@@ -41,7 +42,7 @@ get_header('principal');
                         <div class="ms-2 me-auto"> 
                           <div class="fw-bold"> &nbsp;<?php the_title(); ?> </div>
                         </div>
-                        — &nbsp;<a href="<?php echo get_field('url') ?>"><span class="badge bg-primary rounded-pill"><i class="fas fa-download"></i></span></a>
+                         &nbsp;<a href="<?php echo get_field('url') ?>"> Descargar <span class="badge bg-primary rounded-pill"><i class="fas fa-download"></i></span></a>
                     </li>
 
                 <?php endwhile; ?>

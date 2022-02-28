@@ -485,3 +485,112 @@ function cp_change_post_object() {
         $labels->menu_name = 'Noticias';
         $labels->name_admin_bar = 'Noticias';
 }
+
+add_action( 'init', 'concurso_publico' );
+function concurso_publico() {
+	$args = [
+		'label'  => esc_html__( 'concursos publicos', 'text-domain' ),
+		'labels' => [
+			'menu_name'          => esc_html__( 'concursos publicos', 'municipalidad' ),
+			'name_admin_bar'     => esc_html__( 'concurso publico', 'municipalidad' ),
+			'add_new'            => esc_html__( 'Agregar concurso publico', 'municipalidad' ),
+			'add_new_item'       => esc_html__( 'Agregar nueva concurso publico', 'municipalidad' ),
+			'new_item'           => esc_html__( 'Nueva concurso publico', 'municipalidad' ),
+			'edit_item'          => esc_html__( 'Editar concurso publico', 'municipalidad' ),
+			'view_item'          => esc_html__( 'Ver concurso publico', 'municipalidad' ),
+			'update_item'        => esc_html__( 'Ver concurso publico', 'municipalidad' ),
+			'all_items'          => esc_html__( 'Todas las concursos publicos', 'municipalidad' ),
+			'search_items'       => esc_html__( 'Buscar concursos publicos', 'municipalidad' ),
+			'parent_item_colon'  => esc_html__( 'concurso publico padre', 'municipalidad' ),
+			'not_found'          => esc_html__( 'No concursos publicos found', 'municipalidad' ),
+			'not_found_in_trash' => esc_html__( 'No concursos publicos found in Trash', 'municipalidad' ),
+			'name'               => esc_html__( 'concursos publicos', 'municipalidad' ),
+			'singular_name'      => esc_html__( 'concurso publico', 'municipalidad' ),
+		],
+		'public'              => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'show_ui'             => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'show_in_rest'        => true,
+		'capability_type'     => 'post',
+		'hierarchical'        => false,
+		'has_archive'         => true,
+		'query_var'           => true,
+		'can_export'          => true,
+		'rewrite_no_front'    => false,
+		'show_in_menu'        => true,
+		'menu_icon'           => 'dashicons-admin-post',
+		'supports' => [
+			'title',
+			'author',
+			'thumbnail',
+		],
+		'taxonomies' => [
+			'category',
+		],
+		'rewrite' => true
+	];
+
+	register_post_type( 'concurso_publico', $args );
+}
+
+
+function custom_button_shortcode( $atts, $content = null ) {
+   
+    // shortcode attributes
+    extract( shortcode_atts( array(
+        'src'    => '',
+        'title'  => '',
+        'target' => '',
+        'text'   => '',
+    ), $atts ) );
+ 
+    $content = $text ? $text : $content;
+ 
+    // Returns the button with a link
+    if ( $src ) {
+ 
+        $link_attr = array(
+            'href'   => esc_url( $src ),
+            'title'  => esc_attr( $title ),
+            'target' => ( 'blank' == $target ) ? '_blank' : '',
+            'class'  => 'btn btn-primary m-2 text-white'
+        );
+ 
+        $link_attrs_str = '';
+ 
+        foreach ( $link_attr as $key => $val ) {
+ 
+            if ( $val ) {
+ 
+                $link_attrs_str .= ' ' . $key . '="' . $val . '"';
+ 
+            }
+ 
+        }
+ 
+ 
+        return '<a' . $link_attrs_str . '><span>' . do_shortcode( $content ) . '</span></a>';
+ 
+    }
+ 
+    // Return as span when no link defined
+    else {
+ 
+        return '<span class="custombutton"><span>' . do_shortcode( $content ) . '</span></span>';
+ 
+    }
+ 
+}
+add_shortcode( 'button_link', 'custom_button_shortcode' );
+
+
+function add_categories_to_page() {  
+    // Add tag metabox to page
+    // Add category metabox to page
+    register_taxonomy_for_object_type('category', 'page');  
+}
+ // Add to the admin_init hook of your theme functions.php file 
+add_action( 'init', 'add_categories_to_page' );

@@ -270,6 +270,11 @@
     }
   /* fin*/
 
+
+  .site-main > div {
+    min-height: 60vh;
+  }
+
     /* page, page-galerias, page-noticias, page-ordenanzas */
       .site-main .ordenanzas{
         margin-bottom: 70px;
@@ -286,46 +291,16 @@
     .mec-carousel-type1-head, .mec-event-date-carousel  {
       background-color: #F3BB00 !important; 
   }
-
-
-
-/* Custom Link Navbar 8*/
-  .navbar-eight .navbar-nav .nav-item a {
-    color: #ffffff !important;
-    font-size: 1.05rem !important;
-    font-weight: 700 !important;
-  }
-
-  .navbar-eight.bg-menu .inner-header {
-    background-color: var(--tertiary);
-  }
-  
-  .navbar-eight .navbar-nav /*.nav-item */ {
-    background-color: var(--secondary) !important;
-    color: var(--secondary) !important;
-  }
-  .nav-item .sub-menu { /* menu-principal.php */
-    background-color: #211c4c !important;;
-  }
-
-  .nav-item  .sub-menu a {
-    color: #211B4B !important;
-}
-
 .custom-logo-link>img {
   width: 230px;
   height: auto;
 }
 
-
-
   /* content.php, content-page.php style */
   
-    .post-thumbnail {     /* content-page.php */
-      height: 600px
-    }
+ 
 	  .post-thumbnail img { /*    content.php    */
-	  	margin-top: 20px;
+	  	margin-top: 10px;
       margin-bottom: 40px;
       width: 100%;
       padding-bottom: 20px;
@@ -334,10 +309,65 @@
       height: 600px;
       object-fit: cover;
     }
-	  .entry-content {  /* content.php, content-page.php */
-	  	padding: 20px 14% 50px 14%;
-	  	text-align: justify;
-	  }
+    .single-post {
+      .entry-content {  /* content.php, content-page.php */
+        padding: 20px 14% 50px 14%;
+        text-align: justify;
+      }
+
+    }
+
+    .single {
+      .entry-content {  /* content.php, content-page.php */
+        padding: 20px 14% 50px 14%;
+        text-align: justify;
+      }
+
+    }
+
+    .page {
+      .entry-content {
+
+        ul {
+          list-style-type: disc;
+          li {
+            padding-bottom: 3px;
+            padding-left: 10px;
+          }
+        }
+        
+        padding: 20px 5% 50px 5%;
+        text-align: justify;
+        h2, h3, h4, p {
+          padding: 10px 0px 10px 0px;
+        }
+
+      
+        td, th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even){background-color: #f2f2f2;}
+        
+        tr:hover {background-color: #ddd;}
+        
+        th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #04AA6D;
+          color: white;
+        }
+      }
+    }
+
+    .single-galeria .post-thumbnail {
+      display: none;
+
+    }
+
+	
 	  .navbar { /* content.php, content-page.php */
 	  	box-shadow:none;
 	  }
@@ -345,16 +375,7 @@
 	  	margin-left:6px;
 	  	letter-spacing: 1px;
 	  }
-	  .navbar li, .navbar a { /* content.php, content-page.php, archive.php */
-	  	color:#7C7C7D;
-	  }
-	  .navbar a:hover { /* content.php, content-page.php, archive.php */
-	  	color:#1F1F1F;
-	  }
-    .custom-logo-link>img { /* menu-principal.php */
-      width: 230px;
-      height: auto;
-    }
+
         /* Fin content.php */
     
   .sub-menu { /* menu-principal.php */
@@ -375,7 +396,7 @@
     font-size: 0.9rem;      
   }
   #menu-servicios > li > a:hover { 
-      color: #c5c6c6;
+      color: var(--secondary);
   }
 
   #menu-servicios .menu-item  {
@@ -514,8 +535,6 @@
     font-size: 0; word-spacing: var(--grid-column-gap) !important;
   }
 footer {
-border-top: 3px solid #FF7A00;
-background: #FF7A00;
 padding: 0px 0px 0px 0px;
 }
 footer h4 {
@@ -559,12 +578,7 @@ padding-bottom: 20px;
 background-color: var(--secondary) !important;
 }
 
-
-
-  @import "ayro-ui/scss/mixin";
-  @import "ayro-ui/scss/variables";
-  @import "ayro-ui/scss/cards/card-01.scss";
-  @import "ayro-ui/scss/cards/card-02.scss";
-  @import "ayro-ui/scss/navbars/navbar-08";
-  @import "ayro-ui/scss/navbars/navbar-01";
-  
+@import "ayro-ui/scss/mixin";
+@import "ayro-ui/scss/variables";
+@import "ayro-ui/scss/cards/card-01.scss";
+@import "ayro-ui/scss/cards/card-02.scss";

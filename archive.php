@@ -29,6 +29,8 @@ get_header('principal');
 	<main id="primary" class="site-main">
 
 		<?php if ( have_posts() ) : ?>
+			<div class="container bg-white">
+
 
 			<header class="page-header">
 				<?php
@@ -38,7 +40,6 @@ get_header('principal');
 				?>
 			</header><!-- .page-header -->
 
-			<div class="container">
 
 			<?php
 			/* Start the Loop */
@@ -47,17 +48,17 @@ get_header('principal');
 			?>
 
 				<hr/>
-				<div class="row">
+				<div class="row p-3">
 					<div class="col">
 						<a href="<?php the_permalink(); ?>">
                 		<?php if (has_post_thumbnail( $post->ID ) ): ?>
                 		    <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-                		        <img src="<?php echo $image[0]; ?>" class="img-fluid">
+                		        <img src="<?php echo $image[0]; ?>" class="img-fluid p-4">
                 		<?php endif; ?>
               			</a>
 					</div>
 					<div class="col-9">
-						<a href="<?php the_permalink(); ?>)"><?php the_title(); ?></a>
+						<a class="fs-4" href="<?php the_permalink(); ?>)"><?php the_title(); ?></a>
 						<p class="text">
               				<?php //Filtro para 20 palabras -Valeria
               				add_filter( 'excerpt_length', function($length) {

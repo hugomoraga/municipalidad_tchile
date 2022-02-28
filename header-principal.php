@@ -35,13 +35,13 @@
             href="#primary"><?php esc_html_e( 'Skip to content', 'municipalidad_tchile' ); ?></a>
 
         <header id="masthead" class="site-header">
-         <div class="container p-0">
+         <div class="container-lg p-0">
          <?php get_template_part( 'components/topbar');?>
 
          </div>
 
 
-        <div class="container p-0 shadow">
+        <div class="container-lg p-0 shadow">
         <?php get_template_part( 'components/menu-principal');?>
 
         </div>

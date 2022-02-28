@@ -11,17 +11,22 @@ defined('MECEXEC') or die();
  */
 get_header('principal'); ?>
 
-    <section id="<?php echo apply_filters('mec_single_page_html_id', 'main-content'); ?>" class="<?php echo apply_filters('mec_single_page_html_class', 'mec-container'); ?>">
+<div class="container-lg py-4 bg-white shadow">
+    <section id="<?php echo apply_filters('mec_single_page_html_id', 'main-content'); ?>"
+        class="<?php echo apply_filters('mec_single_page_html_class', 'mec-container'); ?>">
 
         <?php do_action('mec_before_main_content'); ?>
 
         <?php while(have_posts()): the_post(); ?>
 
-            <?php $MEC = MEC::instance(); echo $MEC->single(); ?>
+        <?php $MEC = MEC::instance(); echo $MEC->single(); ?>
 
         <?php endwhile; // end of the loop. ?>
     </section>
 
-    <?php do_action('mec_after_main_content'); ?>
+</div>
+
+
+<?php do_action('mec_after_main_content'); ?>
 
 <?php get_footer('principal');

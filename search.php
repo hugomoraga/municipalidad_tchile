@@ -7,10 +7,20 @@
  * @package municipalidad_tchile
  */
 
-get_header();
 ?>
 
-	<main id="primary" class="site-main">
+<head>
+
+    <?php wp_head(); ?>
+
+</head>
+		<div class="container p-0 shadow">
+        	<?php get_template_part( 'components/menu-principal');?>
+       	</div>
+
+<main id="primary" class="site-main">
+
+	<div class="container">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -18,11 +28,12 @@ get_header();
 				<h1 class="page-title">
 					<?php
 					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', 'municipalidad_tchile' ), '<span>' . get_search_query() . '</span>' );
+					printf( esc_html__( 'Resultados para: %s', 'municipalidad_tchile' ), '<span>' . get_search_query() . '</span>' );
 					?>
 				</h1>
 			</header><!-- .page-header -->
 
+			<div class="row">
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
@@ -35,9 +46,10 @@ get_header();
 				 */
 				get_template_part( 'template-parts/content', 'search' );
 
-			endwhile;
-
-			the_posts_navigation();
+			endwhile;?>
+			</div>
+			<?php
+			//the_posts_navigation();
 
 		else :
 
@@ -45,9 +57,10 @@ get_header();
 
 		endif;
 		?>
+	</div>
 
-	</main><!-- #main -->
+</main><!-- #main -->
 
 <?php
-get_sidebar();
-get_footer();
+
+get_footer('principal');
