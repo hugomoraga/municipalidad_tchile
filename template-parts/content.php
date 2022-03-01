@@ -27,6 +27,10 @@
 			endif;
 			?>
 		</header><!-- .entry-header -->
+		<div class="d-flex flex-row-reverse">
+			<div class="p-0 bg-light text-primary px-3">Publicado el : <strong><?php echo get_the_date( 'l F j, Y' );?> </strong></div>
+		</div>
+		
 
 		<?php municipalidad_tchile_post_thumbnail(); ?>
 

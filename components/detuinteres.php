@@ -16,7 +16,7 @@ $max_color = 5;
             <?php if ($the_loop -> have_posts() ) : ?>
             <?php while ($the_loop -> have_posts() ) : $the_loop -> the_post(); ?>
             
-            <div class="col p-2">
+            <div class="col col-md-4 col-lg-2 p-2">
                 <div class="single-card card-style-one  elementor-animation-shrink">
                     <div class="d-flex justify-content-center bg-white" >
 

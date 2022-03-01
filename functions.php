@@ -594,3 +594,5 @@ function add_categories_to_page() {
 }
  // Add to the admin_init hook of your theme functions.php file 
 add_action( 'init', 'add_categories_to_page' );
+
+

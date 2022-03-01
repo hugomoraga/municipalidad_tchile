@@ -42,9 +42,13 @@ $the_loop = new WP_query(array(
                                             the_excerpt();
                                             ?>
                                     </div>
+                                    <div class="card-footer d-flex flex-row-reverse">
+                                <div class="p-0 text-primary px-3"> <strong><?php echo get_the_date( 'l F j, Y' );?> </strong></div>
+                        </div>
                                 </div>
                             </div>
-                        <?php endwhile; ?>
+                        <?php endwhile; 
+                        ?>
                     <?php wp_reset_postdata(); ?>
 
                     <?php else: ?>

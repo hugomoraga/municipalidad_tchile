@@ -66,11 +66,14 @@ $menu_principal = wp_nav_menu(array(
 
 #menu-principal ul li {
     background-color: transparent !important;
-
+    padding: 4px 0px 4px 0px;
+    margin: 5px;
 }
 
 
 #menu-principal ul li a:hover {
+    background-color: var(--primary) !important;
+
 }
 
 #menu-principal ul li .sub-menu li a {
@@ -97,6 +100,8 @@ $menu_principal = wp_nav_menu(array(
   }
   #menu-principal .nav-item .sub-menu { /* menu-principal.php */
     background-color: #211c4c !important;;
+    padding: 10px;
+
   }
 
  
@@ -111,7 +116,7 @@ $menu_principal = wp_nav_menu(array(
   color: var(--secondary);
   text-transform: capitalize;
   position: relative;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
   font-weight: 500;
@@ -128,4 +133,8 @@ $menu_principal = wp_nav_menu(array(
   transition: all 0.3s ease-out 0s;
 }
 
+#menu-principal .dropdown-menu {
+border: 2px solid rgba(54, 146, 158, 0.95);
+border-radius: 0.5rem;
+}
 </style>

@@ -12,11 +12,11 @@
 ?>
 
 <footer>
-    <div class="container-md bg-primary shadow-sm">
+    <div class="container-lg bg-primary shadow-sm">
         <div class="row d-flex justify-content-start">
             <div class="col-md-6">
                 <div class="row d-flex justify-content-center p-i">
-                    <div class="col-12 text-center text-md-end p-2">
+                    <div class="col-12 text-center text-md-end px-4">
                         <a href="https://lacalera.com">
                             <img width="250"
                                 src="/wp-content/uploads/2022/01/fimage.png"
@@ -26,7 +26,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6  text-center text-md-end">
+            <div class="col-md-6  text-start">
                 <div class="px-5 py-3">
                         <p>Ilustre Municipalidad de La Calera</p>
                         <p>Marathon Nº 312, La Calera</p>
