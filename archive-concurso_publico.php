@@ -13,15 +13,15 @@ get_header('principal');
 
 
 <div class="container p-0">
-	<nav class="navbar navbar-expand-lg pt-3 bg-light">
+	<nav class="navbar navbar-expand-lg bg-light">
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 			<ul class="d-inline-flex fw-bold">
 				<li class="nav-item">
 					<a class="nav-brand" href="<?php echo home_url(); ?>">Inicio</a>
 				</li>
-				<li class="nav-item">/</li>
+				<li class="nav-item text-primary">/</li>
 				<li class="nav-item">
-					<span class="nav-brand"><?php echo post_type_archive_title(); ?></span>
+					<span class="nav-brand text-capitalize"><?php echo post_type_archive_title(); ?></span>
 				</li>
 			</ul>
 		</div>
@@ -49,24 +49,26 @@ get_header('principal');
                 <?php
                 if( have_rows('adjuntar_archivos') ):
                 while ( have_rows('adjuntar_archivos') ) : the_row();
-                    for ($x = 1; $x <=3; $x++) {
-                        $value = get_sub_field('archivo_'.$x);
-                        if( $value ): ?> &nbsp;
-                            <a href="<?php echo $value; ?>">
-                            <span class="badge bg-primary rounded-pill" style="padding-top:7px;padding-bottom:7px;">
-                            <?php echo $x.'°'; ?> <i class="fas fa-download"></i>
-                            </span></a>
-                        <?php endif;
-                    }
+                    $value = get_sub_field('archivo_1'); $x = 1;
+                    if( $value ): ?> &nbsp;
+                        <a href="<?php echo $value; ?>">
+                        <span class="badge bg-primary rounded-pill" style="padding-top:7px;padding-bottom:7px;">
+                        <?php echo $x.'°'; ?> <i class="fas fa-download"></i>
+                        </span></a>
+                    <?php endif;
+                    /*for ($x = 1; $x <=3; $x++) {
+                        $value = get_sub_field('archivo_'.$x);  
+                    }*/
+                    $x++;
                 endwhile;
                 endif;
                 ?>
                 </li>
+                <?php endwhile;?>
         </ol>
 
 		<?php
 
-		endwhile;
 
 		the_posts_navigation();
 

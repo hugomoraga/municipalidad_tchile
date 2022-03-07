@@ -489,10 +489,10 @@ function cp_change_post_object() {
 add_action( 'init', 'concurso_publico' );
 function concurso_publico() {
 	$args = [
-		'label'  => esc_html__( 'concursos publicos', 'text-domain' ),
+		'label'  => esc_html__( 'Concursos Publicos', 'text-domain' ),
 		'labels' => [
-			'menu_name'          => esc_html__( 'concursos publicos', 'municipalidad' ),
-			'name_admin_bar'     => esc_html__( 'concurso publico', 'municipalidad' ),
+			'menu_name'          => esc_html__( 'Concursos publicos', 'municipalidad' ),
+			'name_admin_bar'     => esc_html__( 'Concurso publico', 'municipalidad' ),
 			'add_new'            => esc_html__( 'Agregar concurso publico', 'municipalidad' ),
 			'add_new_item'       => esc_html__( 'Agregar nueva concurso publico', 'municipalidad' ),
 			'new_item'           => esc_html__( 'Nueva concurso publico', 'municipalidad' ),
@@ -502,8 +502,8 @@ function concurso_publico() {
 			'all_items'          => esc_html__( 'Todas las concursos publicos', 'municipalidad' ),
 			'search_items'       => esc_html__( 'Buscar concursos publicos', 'municipalidad' ),
 			'parent_item_colon'  => esc_html__( 'concurso publico padre', 'municipalidad' ),
-			'not_found'          => esc_html__( 'No concursos publicos found', 'municipalidad' ),
-			'not_found_in_trash' => esc_html__( 'No concursos publicos found in Trash', 'municipalidad' ),
+			'not_found'          => esc_html__( 'No concursos publicos encontrados', 'municipalidad' ),
+			'not_found_in_trash' => esc_html__( 'No concursos publicos encontrados', 'municipalidad' ),
 			'name'               => esc_html__( 'concursos publicos', 'municipalidad' ),
 			'singular_name'      => esc_html__( 'concurso publico', 'municipalidad' ),
 		],
@@ -596,3 +596,25 @@ function add_categories_to_page() {
 add_action( 'init', 'add_categories_to_page' );
 
 
+ 
+
+function slider_eventos() {
+	ob_start();
+	get_template_part('components/slider-eventos');
+	return ob_get_clean();   
+ } 
+ add_shortcode( 'slider_eventos', 'slider_eventos' );
+
+ 
+ add_filter('pre_get_posts', 'query_post_type');
+ function query_post_type($query) {
+   if(is_category() || is_tag()) {
+	 $post_type = get_query_var('post_type');
+	 if($post_type)
+		 $post_type = $post_type;
+	 else
+		 $post_type = array('post','informacion', 'page');
+	 $query->set('post_type',$post_type);
+	 return $query;
+	 }
+ }

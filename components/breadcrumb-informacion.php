@@ -17,24 +17,14 @@
 				</li>
 				<li class="nav-item text-primary">/</li>
 				<li class="nav-item">
-					<?php
-						$categoria = ""; $param = "?cat="; $cont = 0;
-						foreach((get_the_category()) as $category) {
-						if($cont==0) {
-							$categoria = $categoria . $category->cat_name . ' ';
-							$param = $param . $category->slug;
-						  } $cont++;
-						} if($categoria=="") $categoria=get_post_type();
-						if($categoria!="") :
+					<?php 
+					$categories = get_the_category();
+					foreach ($categories as $cat) {
+					   $category_link = get_category_link($cat->cat_ID);
+					   echo '<a href="'.esc_url( $category_link ).'" title="'.esc_attr($cat->name).'">'.$cat->name.'</a> ';
+					}
 					?>
-					<a class="nav-brand" href="<?php echo home_url()."/".get_post_type()."" ?>">
-				<?php	
-					endif;
-					$post_type = get_post_type_object( get_post_type($post) );
-						echo $post_type->label; ?>
-
-
-					</a>
+					
 				</li>
 				<li class="nav-item text-primary">/</li>
 				<li class="nav-item">

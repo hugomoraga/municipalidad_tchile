@@ -12,8 +12,10 @@ get_header('principal');
 
 
 <main id="primary" class="site-main single">
+
+
     <div class="container-lg p-0">
-        <?php get_template_part( 'components/breadcrumb', 'content' );
+        <?php get_template_part( 'components/breadcrumb', 'informacion' );
         if ( is_singular() ) : ?>
 
         <?php endif;?>

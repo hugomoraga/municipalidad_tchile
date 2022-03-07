@@ -5,23 +5,23 @@ $menu_principal = wp_nav_menu(array(
 'container' => false,
 'menu_class' => '',
 'fallback_cb' => '__return_false',
-'items_wrap' => '<ul id="%1$s" class="w-100 d-flex text-uppercase justify-content-center navbar-nav me-auto mb-2 mb-md-0 %2$s" style="background-color: var(--secondary) !important;">%3$s</ul>',
+'items_wrap' => '<ul id="%1$s" class="w-100 d-flex  justify-content-center navbar-nav me-auto mb-2 mb-md-0 %2$s">%3$s</ul>',
 'depth' => 2,
 'walker' => new bootstrap_5_wp_nav_menu_walker()
 ));
 ?>
 
 
-<nav id="menu-principal" class="navbar navbar-expand-md shadow-sm w-100 bg-secondary">
+<nav id="menu-principal" class="navbar navbar-expand-lg shadow-sm w-100 bg-secondary">
     <div class="row container-fluid">
         <div class="col-md-12 d-flex align-items-center justify-content-around">
             <section class=" w-100"">
                 <div class="container-fluid ">
                     <div class=" flex-row row g-0 row-cols-2">
-                        <div class="col-xl-3 col-12">
+                        <div class="col-xl-2 col-12">
                             <div class="row">
                             <div class="col-9 col-md-12">
-                                    <div class="navbar-brand text-center"><?php the_custom_logo(); ?>
+                                    <div class="text-center"><?php the_custom_logo(); ?>
                                     </div>
                             </div>
                             <div class="col-3 pt-2 pt-md-0">
@@ -40,7 +40,7 @@ $menu_principal = wp_nav_menu(array(
  
                         </div>
 
-                        <div class="col-xl-9 col-12 justify-content-end d-flex align-items-center">
+                        <div class="col-xl-9 col-12 d-flex align-items-center">
                   
                             <div class=" collapse navbar-collapse " id="main-menu">
                                 <?php echo $menu_principal ?>

@@ -41,8 +41,8 @@
 		else :
 			?>
 
-			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'municipalidad_tchile' ); ?></p>
-			<?php
+			<p><?php esc_html_e( 'Parece que no podemos encontrar lo que estás buscando. Tal vez la búsqueda pueda ayudar.', 'municipalidad_tchile' ); ?></p>
+	<?php
 			get_search_form();
 
 		endif;

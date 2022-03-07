@@ -16,7 +16,8 @@
             <li class="nav-item">
                 <a class="nav-brand" href="<?php echo home_url(); ?>">Inicio</a>
             </li>
-            <li class="nav-item text-primary">/</li>
+            <?php if( has_category() ) :?>
+            <li class="nav-item text-primary">&nbsp/</li>
             <li class="nav-item">
                 <?php
                 $categories = get_the_category();
@@ -27,8 +28,9 @@
                     } 
                 ?>
             </li>
+            <?php endif; ?>
 
-            <li class="nav-item text-primary">/&nbsp</li>
+            <li class="nav-item text-primary">&nbsp/</li>
 
             <li class="nav-item ">
                 <a class="nav-brand" href="#"><?php echo get_the_title(); ?></a>

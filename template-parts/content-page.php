@@ -22,8 +22,9 @@
 	<header class="entry-header pb-2">
 		<?php the_title( '<h1 class="entry-title p-3 text-center">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
-
+	<?php if (has_post_thumbnail( $post->ID ) ): ?>
 	<?php municipalidad_tchile_post_thumbnail( 'medium_large'); ?>
+	<?php endif; ?>
 
 	<div class="entry-content">
 		<?php

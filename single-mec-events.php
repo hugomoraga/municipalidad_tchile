@@ -13,7 +13,8 @@ get_header('principal'); ?>
 
 <div class="container-lg py-4 bg-white shadow">
     <section id="<?php echo apply_filters('mec_single_page_html_id', 'main-content'); ?>"
-        class="<?php echo apply_filters('mec_single_page_html_class', 'mec-container'); ?>">
+        class="<?php echo apply_filters('mec_single_page_html_class', 'mec-container'); ?>"
+        style="width:100%">
 
         <?php do_action('mec_before_main_content'); ?>
 
