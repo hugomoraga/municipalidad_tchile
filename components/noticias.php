@@ -19,11 +19,11 @@ $the_loop = new WP_query(array(
                             <div class="col-12 col-md-6 ">
                                 <div class="single-card card-style-one mt-0 m-3 m-sm-0">
                                     <div class="img-card"  style="height: 180px;" >
-                                    <a href="<?php the_permalink(); ?>">
+                                    <a href="<?php the_permalink(); ?>" style="width:100%">
                                             <?php if (has_post_thumbnail( $post->ID ) ): ?>
                                             <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
                                             <img src="<?php echo $image[0]; ?>" class="icard-img-top"
-                                                style="object-fit: cover; height:180px; width: 300px;">
+                                                style="object-fit: cover; height:180px; width: 100%;">
                                             <?php endif; ?>
                                         </a>
                                         

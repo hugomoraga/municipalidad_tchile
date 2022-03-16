@@ -398,6 +398,56 @@ function ordenanza() {
 	register_post_type( 'ordenanza', $args );
 }
 
+add_action( 'init', 'organizacion' );
+function organizacion() {
+	$args = [
+		'label'  => esc_html__( 'organizaciones', 'text-domain' ),
+		'labels' => [
+			'menu_name'          => esc_html__( 'Organizaciones Comunitarias', 'municipalidad' ),
+			'name_admin_bar'     => esc_html__( 'organizacion comunitaria', 'municipalidad' ),
+			'add_new'            => esc_html__( 'Agregar Organizacion comunitaria', 'municipalidad' ),
+			'add_new_item'       => esc_html__( 'Agregar Nueva organizacion comunitaria', 'municipalidad' ),
+			'new_item'           => esc_html__( 'Nueva Organizacion comunitaria', 'municipalidad' ),
+			'edit_item'          => esc_html__( 'Editar Organizacion comunitaria', 'municipalidad' ),
+			'view_item'          => esc_html__( 'Ver organizacion comunitaria', 'municipalidad' ),
+			'update_item'        => esc_html__( 'Ver organizacion comunitaria', 'municipalidad' ),
+			'all_items'          => esc_html__( 'Todas las Organizaciones comunitarias', 'municipalidad' ),
+			'search_items'       => esc_html__( 'Buscar Organizaciones comunitarias', 'municipalidad' ),
+			'parent_item_colon'  => esc_html__( 'organizacion comunitaria padre', 'municipalidad' ),
+			'not_found'          => esc_html__( 'No organizaciones comunitarias found', 'municipalidad' ),
+			'not_found_in_trash' => esc_html__( 'No organizaciones comunitarias found in Trash', 'municipalidad' ),
+			'name'               => esc_html__( 'organizaciones', 'municipalidad' ),
+			'singular_name'      => esc_html__( 'organizacion', 'municipalidad' ),
+		],
+		'public'              => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'show_ui'             => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'show_in_rest'        => true,
+		'capability_type'     => 'post',
+		'hierarchical'        => false,
+		'has_archive'         => true,
+		'query_var'           => true,
+		'can_export'          => true,
+		'rewrite_no_front'    => false,
+		'show_in_menu'        => true,
+		'menu_icon'           => 'dashicons-admin-post',
+		'supports' => [
+			'title',
+			'author',
+			'thumbnail',
+		],
+		'taxonomies' => [
+			'category',
+		],
+		'rewrite' => true
+	];
+
+	register_post_type( 'organizacion', $args );
+}
+
 function add_additional_class_on_li($classes, $item, $args) {
     if(isset($args->add_li_class)) {
         $classes[] = $args->add_li_class;

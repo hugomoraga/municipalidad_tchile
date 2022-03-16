@@ -8,7 +8,7 @@
  */
 
 ?>
-	<div class="col-4 p-3">
+	<div class="col-md-4 col-sm-12 p-3">
 	<div class="card mb-3" style="height:100%">
 		<?php if (has_post_thumbnail( $post->ID ) ): ?>
             <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>

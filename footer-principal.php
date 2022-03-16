@@ -10,7 +10,11 @@
  */
 
 ?>
-
+<style>
+    footer .container-lg{
+        background-image: linear-gradient(to bottom right, #090815, #211C4C);
+    }
+</style>
 <footer>
     <div class="container-lg bg-primary shadow-sm">
         <div class="row d-flex justify-content-start">
@@ -19,9 +23,9 @@
                     <div class="col-12 text-center text-md-end px-4">
                         <a href="https://lacalera.com">
                             <img width="250"
-                                src="/wp-content/uploads/2022/01/fimage.png"
+                                src="/wp-content/uploads/2022/03/white-logo.png"
                                 class="attachment-full size-full" alt="" loading="lazy"
-                                srcset="/wp-content/uploads/2022/01/fimage.png 2048w"
+                                srcset="/wp-content/uploads/2022/03/white-logo.png 2048w"
                                 sizes="(max-width: 2697px) 100vw, 2697px"></a>
                     </div>
                 </div>
