@@ -57,7 +57,7 @@ $custom_query = new WP_query(array(
                         </div>
                         <div class="card-content" style="height: 230px;">
                             <h4 class="card-title fs-6">
-                                <a href="<?php the_permalink(); ?>)"><?php the_title(); ?></a>
+                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                             </h4>
                                 <?php //Filtro para 20 palabras -Valeria
                                     add_filter( 'excerpt_length', function($length) {

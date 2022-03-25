@@ -655,16 +655,17 @@ function slider_eventos() {
  } 
  add_shortcode( 'slider_eventos', 'slider_eventos' );
 
+
  
  add_filter('pre_get_posts', 'query_post_type');
  function query_post_type($query) {
-   if(is_category() || is_tag()) {
-	 $post_type = get_query_var('post_type');
-	 if($post_type)
-		 $post_type = $post_type;
-	 else
-		 $post_type = array('post','informacion', 'page');
-	 $query->set('post_type',$post_type);
-	 return $query;
-	 }
+ if(is_category()  && $query->is_main_query()) {
+ $post_type = get_query_var('post_type');
+ if($post_type)
+	 $post_type = $post_type;
+ else
+	 $post_type = array('post','informacion','page');
+ $query->set('post_type',$post_type);
+ return $query;
+ }
  }

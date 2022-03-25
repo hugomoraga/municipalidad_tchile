@@ -7,6 +7,7 @@
  * @package municipalidad_tchile
  */
 
+
 ?>
 <?php if ( is_singular() ) : ?>
 	<nav class="navbar navbar-expand-lg bg-light">
@@ -17,29 +18,20 @@
 				</li>
 				<li class="nav-item text-primary">/</li>
 				<li class="nav-item text-capitalize">
-					<?php
-						$categoria = ""; $param = "?cat="; $cont = 0;
-						foreach((get_the_category()) as $category) {
-						if($cont==0) {
-							$categoria = $categoria . $category->cat_name . ' ';
-							$param = $param . $category->slug;
-						  } $cont++;
-						} if($categoria=="") $categoria=get_post_type();
-						if($categoria!="") :
-					?>
-					<a class="nav-brand" href="<?php echo home_url()."/".get_post_type()."" ?>">
-				<?php	
-					endif;
-					$post_type = get_post_type_object( get_post_type($post) );
-						echo $post_type->label; ?>
-
-
-					</a>
+                <?php
+                $categories = get_the_category();
+ 
+                if ( ! empty( $categories ) ) {
+                    echo '<a href="' . get_category_link($categories[1]->term_id) . '">' . $categories[1]->name . '</a>';
+                    }
+                ?>
+			
 				</li>
 				<li class="nav-item text-primary">/</li>
 				<li class="nav-item">
 					<span class="nav-brand fs-bold"><?php echo get_the_title(); ?></span>
 				</li>
+
 			</ul>
 		</div>
 	</nav>

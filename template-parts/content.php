@@ -12,7 +12,7 @@
 
 <div class="container-lg bg-white p-0">
 
-<?php get_template_part( 'components/breadcrumb', 'content' );
+<?php get_template_part( 'components/breadcrumb', 'post' );
 	if ( is_singular() ) : ?>
 
 <?php endif;?>
