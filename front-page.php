@@ -36,6 +36,10 @@ get_header('principal');
     <!--  SECCION ELEMENTOR -->
     <?php the_content();?>
 
+
+    <?php get_template_part( 'components/youtubevideo');?>
+
+
     </div>
 </div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v12.0&appId=213640426359512&autoLogAppEvents=1" nonce="GeKzkFHM"></script>
